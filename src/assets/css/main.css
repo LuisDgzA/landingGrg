@@ -18,3 +18,7 @@ body{
 .claseNormal{
     @apply text-red-500;
 }
+
+.work{
+    font-family: "Work Sans", sans-serif;
+}
