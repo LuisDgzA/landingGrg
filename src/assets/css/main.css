@@ -19,6 +19,18 @@ body{
     @apply text-red-500;
 }
 
+.call-to-actions-general{
+    @apply bg-redGRG text-white uppercase px-[54px] py-[12px] w-fit font-semibold;
+}
+
 .work{
     font-family: "Work Sans", sans-serif;
+}
+
+.titulo-u{
+    @apply text-2xl lg:text-3xl font-semibold;
+}
+
+.parrafo-u{
+    @apply lg:text-2xl;
 }
