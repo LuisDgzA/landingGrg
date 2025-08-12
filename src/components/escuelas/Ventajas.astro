@@ -1,0 +1,31 @@
+---
+const ventajas = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ",
+
+]
+---
+
+<div class="bg-black">
+    <div class="container mx-auto py-[89px]">
+        <p class="text-center text-white text-5xl font-semibold mb-[89px]">Ventajas de formar <br> parte de este programa</p>
+        <div class="grid grid-cols-4 text-white gap-[80px]">
+            {
+                ventajas.map(ventaja => (
+                    <div class="flex flex-col">
+                        <span class="grid place-content-center">
+                            icon
+                        </span>
+                        <p class="text-center">{ventaja}</p>
+                    </div>
+                ))
+            }
+        </div>
+        
+    </div>
+</div>

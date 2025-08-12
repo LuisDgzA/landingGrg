@@ -1,0 +1,19 @@
+---
+import CalendarLayout from '../layouts/CalendarLayout.astro';
+import "../assets/css/main.css"
+import '../assets/css/calendario.css'
+
+---
+
+<CalendarLayout>
+    <button id="btncalendar">button</button>
+	<div class="container mx-auto">
+        <h1 class="text-red-500 text-3xl" >hola</h1>
+        <div class="max-w-[500px] w-[500px] h-[300px] border-2 border-red-500">
+            <div  id="caleandar"></div>
+        </div>
+    </div>
+</CalendarLayout>
+
+<script src="../../src/scripts/calendar.js" defer></script>
+<script src="../../src/scripts/eventosCalendar.js"  defer></script>

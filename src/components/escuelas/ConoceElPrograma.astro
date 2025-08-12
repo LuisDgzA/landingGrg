@@ -1,0 +1,20 @@
+---
+const {claveRvoe, claveEscuela, fechaInscripcion} = Astro.props;
+---
+
+
+<div class="container mx-auto mt-16">
+    <div class="flex gap-6">
+        <div class="w-3/5 space-y-8">
+            <p class="text-redGRG text-xl font-semibold">CLAVE DE RVOE: {claveRvoe} CLAVE DE ESCUELA: {claveEscuela}</p>
+            <p class="text-2xl font-semibold text-5xl">Conoce el programa</p>
+            <p class="text-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum non aut iste culpa ut! Incidunt quisquam aliquam rerum dolorem, neque exercitationem consectetur aperiam quasi, consequatur, placeat repudiandae accusamus ullam cupiditate. Labore illum nisi animi eos dolorum, cupiditate architecto beatae quam suscipit officiis perferendis veniam minus deleniti, laborum explicabo? Ad, ut!</p>
+            <p class="text-redGRG font-semibold text-3xl">Inscripción: {fechaInscripcion}</p>
+        </div>
+        <div class="w-2/5">
+            <img class="w-full mb-6" src="/images/cocina_titulo.jpg" alt="">
+            <button class="call-to-actions-general !w-full">pre-registrate ahora</button>
+            <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at autem quisquam, accusamus sint nobis nihil quos voluptate eveniet ducimus!</p> -->
+        </div>
+    </div>
+</div>

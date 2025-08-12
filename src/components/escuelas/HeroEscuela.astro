@@ -1,0 +1,24 @@
+---
+
+import Topbar from "../Topbar.astro";
+import Arrow from "../../../public/images/arrow.svg";
+import { clsx } from 'clsx';
+
+const {titulo, imagenHero} = Astro.props;
+const bgClass = `bg-[url(${imagenHero})] text-white`
+---
+
+<section class="text-white bg-cover" style=`background-image: url('${imagenHero}');`>
+    <div class="container mx-auto relative">
+        <!-- <Inscripciones client:load/> -->
+        <Topbar/>
+        <div class="w-[85%] lg:w-[75%] font-bold flex flex-col gap-[32px] pb-[5rem] md:pb-[8rem] ">
+        
+            <p class="work font-light xl:text-2xl">Nuestras Escuelas</p>
+            <h1 class="text-[1.8rem] md:text-[2.2rem] xl:text-5xl  leading-[120%]">{titulo}</h1>
+
+        </div>
+        <Arrow class="go-to-bottom absolute bottom-[5rem] right-6 cursor-pointer"></Arrow>
+    </div>
+
+</section>

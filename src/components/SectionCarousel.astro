@@ -1,11 +1,15 @@
 ---
 const { items = [] } = Astro.props;
 const realLength = items.length;
+import GrgRojo from '../../public/images/grg_rojo.svg'
+
 ---
 
 <section class="container mx-auto">
-  <h2 class="text-center text-2xl md:text-3xl font-semibold mb-4 py-9">
-    Quienes Recomiendan Universidad GRG
+  <GrgRojo class="mb-6 mx-auto" />
+
+  <h2 class="text-center text-2xl md:text-3xl xl:text-6xl font-semibold mb-4 py-9 text-lightGrayGRG">
+    Quienes Recomiendan <br> Universidad GRG
   </h2>
 
   <div class="relative overflow-hidden">
