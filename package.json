@@ -12,6 +12,8 @@
     "@astrojs/react": "^4.3.0",
     "@tailwindcss/vite": "^4.1.10",
     "astro": "^5.9.3",
+    "clsx": "^2.1.1",
+    "preline": "^3.2.3",
     "tailwindcss": "^4.1.10"
   }
 }

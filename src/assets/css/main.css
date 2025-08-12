@@ -1,7 +1,13 @@
 @import "tailwindcss";
 
+/* Preline UI */
+@source "../../../node_modules/preline/dist/*.js";
+@import "../../../node_modules/preline/variants.css";
+
 @theme{
     --color-redGRG: #B8203A;
+    --color-grayGRG: #222222;
+    --color-lightGrayGRG: #726D68;
 }
 
 
@@ -11,24 +17,33 @@
     }
 }
 
+html{
+    scroll-behavior: smooth;
+
+}
+
 body{
     font-family: "Raleway", sans-serif;
 }
 
 .hero-container{
-    background: url('./images/hero.png') center no-repeat;
+    background: url('/images/hero_new.png') center no-repeat;
     background-size: cover;
     background-position: left;
 }
 .topbar-link{
-    @apply border-1 border-transparent p-3 hover:border-b-redGRG xl:text-lg;
+    @apply border-1 border-transparent p-3 hover:border-b-redGRG xl:text-lg relative cursor-pointer;
 }
 .claseNormal{
     @apply text-red-500;
 }
 
 .call-to-actions-general{
-    @apply bg-redGRG text-white uppercase px-[54px] py-[12px] w-fit font-semibold;
+    @apply bg-redGRG text-white uppercase px-[54px] py-[12px] w-fit font-semibold cursor-pointer;
+}
+
+.call-to-actions-secondary{
+    @apply bg-grayGRG text-white uppercase px-[54px] py-[12px] w-fit font-semibold;
 }
 
 .work{
@@ -40,5 +55,26 @@ body{
 }
 
 .parrafo-u{
-    @apply lg:text-2xl;
+    @apply lg:text-xl;
 }
+
+.floating-label{
+    @apply absolute text-lg text-lightGrayGRG transform -translate-y-4 top-0 z-10 origin-[0] bg-white px-2 start-1;
+}
+
+.floating-input{
+    @apply block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-2 border-lightGrayGRG appearance-none  focus:outline-none focus:ring-0;
+}
+
+.accordion-ejes{
+    @apply w-full flex flex-col md:flex-row justify-between items-center bg-gray-100 text-left font-semibold text-gray-800;
+}
+
+.readmore-ejes{
+    @apply text-white  bg-redGRG py-7 px-10 text-xl w-full md:w-fit flex items-center gap-4;
+}
+
+.egresado-number{
+    @apply text-[120px] font-semibold text-redGRG leading-[120px];
+}
+

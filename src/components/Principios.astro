@@ -1,0 +1,73 @@
+---
+import DownloadIcon from '../assets/icons/Download.svg'
+---
+
+<section class="container mx-auto">
+  <div class="max-w-4xl mx-auto px-4 py-12">
+    <!-- <img src="./images/logo-grg.png" alt="Logo GRG" class="mx-auto mb-6" /> -->
+    
+    <h2 class="text-center text-2xl md:text-5xl font-semibold mb-4 text-lightGrayGRG">
+      Principios Estratégicos de la Universidad GRG
+    </h2>
+    
+    <!-- <p class="text-center text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
+      Los principios estratégicos, habilitan a la Universidad GRG para responder a nuestra visión, a una mirada de largo plazo, en el que nuestro compromiso con el desarrollo del talento es clave para alinear nuestras capacidades y procesos al reto de ofrecer experiencias extraordinarias a nuestros clientes que cada vez tienen más información, gustos más sofisticados, buscan productos personalizados, valoran la agilidad, atención y servicio en cada contacto y viven en un entorno de alta tecnología.
+    </p> -->
+  </div>
+  <!-- Acordeón -->
+  <div class="space-y-4 mb-20">
+
+    <!-- Item 1 -->
+    <div class="rounded overflow-hidden">
+      <button 
+        class="accordion-ejes"
+        onclick="toggleAccordion(event)"
+      >
+        <span class="flex items-center gap-2 py-4 lg:text-xl xl:text-2xl">
+          <span class="text-yellow-400">▶</span>
+          Ejes institucionales de la Universidad GRG
+        </span>
+        <span class="readmore-ejes">Leer Más <DownloadIcon/></span>
+      </button>
+      <div class="px-4 py-3 text-gray-700 hidden">
+        <!--  -->
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="rounded overflow-hidden">
+      <button 
+        class="accordion-ejes"
+        onclick="toggleAccordion(event)"
+      >
+        <span class="flex items-center py-4 gap-2 lg:text-xl xl:text-2xl">
+          <span class="text-yellow-400">▶</span>
+          Declaración del Propósito de la Universidad GRG
+        </span>
+        <span class="readmore-ejes">Leer Más <DownloadIcon/>          
+        </span>
+      </button>
+      <div class="px-4 py-3 text-gray-700 hidden">
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="rounded overflow-hidden">
+      <button 
+        class="accordion-ejes"
+        onclick="toggleAccordion(event)"
+      >
+        <span class="flex items-center gap-2 py-4 lg:text-xl xl:text-2xl">
+          <span class="text-yellow-400">▶</span>
+          Declaración de Misión de la Universidad GRG
+        </span>
+        <span class="readmore-ejes">Leer Más <DownloadIcon/></span>
+      </button>
+      <!-- <div class="px-4 py-3 text-gray-700 hidden">
+      </div> -->
+    </div>
+
+  </div>
+
+  
+</section>
