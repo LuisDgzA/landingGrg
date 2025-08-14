@@ -1,13 +1,13 @@
 ---
 import SectionModeloEducativo from "./SectionModeloEducativo.astro";
-import Footer from "./Footer.astro";
+import Footer from "./generics/Footer.astro";
 import Hero from "./Hero.astro";
 import SectionConceptos from "./SectionConceptos.astro";
 import SectionCarousel from "./SectionCarousel.astro";
 import QuienesSomos from "./QuienesSomos.astro";
 import OfertaEducativa from "./OfertaEducativa.astro";
 import Principios from "./Principios.astro";
-import FormContacto from "./FormContacto.astro";
+import FormContacto from "./generics/FormContacto.astro";
 
 const personas = [
   {
@@ -47,7 +47,7 @@ const personas = [
     <Principios/>
     <OfertaEducativa/>
     <FormContacto/>
-    {personas.length > 0 && <SectionCarousel items={personas} />}
+    {personas.length > 0 && <SectionCarousel titleCarousel="Quienes recomiendan" items={personas} />}
     <Footer/>
     
 </div>

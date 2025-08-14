@@ -1,6 +1,7 @@
 ---
 import GrgRojo from '../../public/images/grg_rojo.svg'
-import FormContacto from './FormContacto.astro'
+import FormContacto from './generics/FormContacto.astro'
+import FormPreregistro from './generics/FormPreregistro.astro'
 ---
 
 <div class="container mx-auto">
@@ -23,7 +24,7 @@ import FormContacto from './FormContacto.astro'
         <div class="w-[40%] bg-redGRG text-white px-10 py-16 space-y-6">
             <h3 class="text-5xl">Estudiantes</h3>
             <p class="text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, nostrum?</p>
-            <a class="text-2xl border-b-2 border-white" href="javascript:void(0)">Inscribete ahora!</a>
+            <a class="text-2xl border-b-2 border-white" href="javascript:void(0)">Accede a tu Campus Digital</a>
         </div>
         <div class="w-[60%]">
             <img src="./images/estudiantes.png" class="w-full h-full object-cover" alt="">
@@ -44,7 +45,7 @@ import FormContacto from './FormContacto.astro'
           </svg>
         </button>
        <div>
-        <FormContacto/>
+        <FormPreregistro width="w-[90%]"/>
        </div>
       
       

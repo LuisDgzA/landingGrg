@@ -1,0 +1,37 @@
+---
+
+    const {width} = Astro.props
+---
+<div class="container mx-auto my-20">
+    <div class="space-y-4 mb-10">
+        <h2 class="text-center text-2xl md-text-3xl xl:text-5xl text-redGRG font-semibold">Accede al Pre-Registro</h2>
+        <h2 class="text-center text-2xl md-text-3xl xl:text-3xl text-lightGrayGRG font-bold">Un paso hacia tu formación académica.</h2>
+    </div>
+
+    <div class=`${width} mx-auto`>
+        <form class="space-y-6">
+            <div class="relative">
+                <input type="text" id="nombre" class="floating-input  peer" placeholder=" " />
+                <label for="nombre" class="floating-label">Nombre completo</label>
+            </div>
+            <div class="relative">
+                <input type="text" id="correo" class="floating-input  peer" placeholder=" " />
+                <label for="correo" class="floating-label">Correo electrónico</label>
+            </div>
+            <div class="relative">
+                <input type="tel" id="telefono" class="floating-input  peer" placeholder=" " />
+                <label for="telefono" class="floating-label">Teléfono</label>
+            </div>
+            <div class="relative">
+                <textarea id="mensaje" class="floating-input  peer" rows="10"></textarea>
+                <label for="mensaje" class="floating-label">Mensaje</label>
+            </div>
+            <div class="w-full flex justify-center">
+                <button class="call-to-actions-secondary">enviar mensaje</button>
+
+            </div>
+
+        </form>
+    </div>
+    
+</div>

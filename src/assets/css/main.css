@@ -27,7 +27,7 @@ body{
 }
 
 .hero-container{
-    background: url('/images/hero_new.png') center no-repeat;
+    background: url('/images/hero_new.jpg') center no-repeat;
     background-size: cover;
     background-position: left;
 }
