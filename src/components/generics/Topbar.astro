@@ -11,11 +11,11 @@ import IconoRojoBlanco from '../../../public/images/icono_blanco_rojo.svg'
             </li>
             <li class="topbar-link submenu-dropdown">Comunidad Escolar
                 <div class="bg-gray-300 flex flex-col text-black absolute -left-[1rem] top-[4rem] w-max p-8 space-y-4 hidden dropdown">
-                    <a href="/comunidadEscolar">Boletín Educativo</a>
-                    <a href="/comunidadEscolar">Bolsa de Trabajo</a>
-                    <a href="/comunidadEscolar">Nuestros Docentes</a>
-                    <a href="/comunidadEscolar">Calendario Académico</a>
-                    <a href="/comunidadEscolar">Becas y Otros Beneficios</a>
+                    <a href="./comunidadEscolar">Boletín Educativo</a>
+                    <a href="./comunidadEscolar">Bolsa de Trabajo</a>
+                    <a href="./comunidadEscolar">Nuestros Docentes</a>
+                    <a href="./comunidadEscolar">Calendario Académico</a>
+                    <a href="./comunidadEscolar">Becas y Otros Beneficios</a>
                 </div>
             </li>
             <li class="topbar-link submenu-dropdown">
@@ -55,7 +55,7 @@ import IconoRojoBlanco from '../../../public/images/icono_blanco_rojo.svg'
             // 3. if the click target isn’t inside *any* dropdown…
             if (!e.target.closest('.submenu-dropdown')) {
                 // …handle your “outside” click here
-                console.log('Clicked outside all dropdowns!');
+                // console.log('Clicked outside all dropdowns!');
                 // e.g. close all dropdowns
                 Dropdowns.forEach(dd => dd.classList.add('hidden'));
             }

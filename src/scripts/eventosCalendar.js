@@ -20,9 +20,21 @@ var element = document.getElementById('caleandar');
 caleandar(element, eventsNormal, settings);
 // console.log("hola")
 
-const btncalendar = document.getElementById('btncalendar')
+// const btncalendar = document.getElementById('btncalendar')
 
-btncalendar.addEventListener('click', () => {
-    element.innerHTML = ''
-    caleandar(element, eventsInscripcion, settings);
-})
+// btncalendar.addEventListener('click', () => {
+//     element.innerHTML = ''
+//     caleandar(element, eventsInscripcion, settings);
+// })
+
+document.addEventListener("click", function(e){
+    const target = e.target.closest(".eventday"); // Or any other selector.
+
+    if(target){
+        // Do something with `target`.
+        // console.log(target.getAttribute('data-index'))
+        let index = Number(target.getAttribute('data-index'))
+        // imgCalendario.setAttribute("src",target.getAttribute("data-src"))
+
+    }
+});

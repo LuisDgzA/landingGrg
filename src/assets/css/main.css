@@ -8,6 +8,7 @@
     --color-redGRG: #B8203A;
     --color-grayGRG: #222222;
     --color-lightGrayGRG: #726D68;
+    --color-grayExtra: #f7f7f7;
 }
 
 
@@ -39,11 +40,11 @@ body{
 }
 
 .call-to-actions-general{
-    @apply bg-redGRG text-white uppercase px-[54px] py-[12px] w-fit font-semibold cursor-pointer;
+    @apply bg-redGRG text-white px-6 py-[12px] w-fit  cursor-pointer;
 }
 
 .call-to-actions-secondary{
-    @apply bg-grayGRG text-white uppercase px-[54px] py-[12px] w-fit font-semibold;
+    @apply bg-grayGRG text-white px-[54px] py-[12px] w-fit ;
 }
 
 .work{
@@ -55,7 +56,7 @@ body{
 }
 
 .parrafo-u{
-    @apply lg:text-xl;
+    @apply text-center lg:text-start;
 }
 
 .floating-label{
@@ -67,14 +68,66 @@ body{
 }
 
 .accordion-ejes{
-    @apply w-full flex flex-col md:flex-row justify-between items-center bg-gray-100 text-left font-semibold text-gray-800;
+    @apply w-full flex justify-between items-center bg-gray-100 text-left font-semibold text-gray-800;
 }
 
 .readmore-ejes{
-    @apply text-white  bg-redGRG py-7 px-10 text-xl w-full md:w-fit flex items-center gap-4;
+    @apply text-white  bg-redGRG py-7  px-4 lg:px-10 text-xl  md:w-fit flex items-center gap-4;
 }
 
 .egresado-number{
     @apply text-[120px] font-semibold text-redGRG leading-[120px];
+}
+
+.splide:not(.is-overflow) .splide__pagination {
+    display: flex !important;
+}
+
+.splide__pagination{
+    bottom: -2.5rem !important;
+}
+
+.splide__pagination__page.is-active{
+    @apply bg-redGRG!;
+}
+
+
+/* .paginationTutores .splide__pagination__page.is-active{
+    @apply bg-redGRG!;
+} */
+
+.text-120{
+    @apply text-[64px] xl:text-[120px];
+
+}
+.text-64{
+    @apply text-[32px] md:text-4xl xl:text-[64px];
+
+}
+
+.text-50{
+    @apply text-[2rem] md:text-[2.8rem] xl:text-[50px];
+}
+
+.text-45{
+    @apply text-[30px] xl:text-[45px];
+
+}
+
+.text-30{
+    @apply text-[30px] xl:text-[30px];
+
+}
+
+.text-23{
+    @apply text-xl md:text-[22px] xl:text-[23px];
+
+}
+
+
+
+.text-20{
+    @apply text-[18px] xl:text-[20px];
+
 }
 

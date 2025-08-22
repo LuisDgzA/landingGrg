@@ -12,6 +12,8 @@ import BolsaTrabajo from "@/components/comunidadEscolar/BolsaTrabajo.astro";
 import Footer from "@/components/generics/Footer.astro";
 import Foros from "@/components/comunidadEscolar/Foros.astro";
 import ProgramasOfertas from "@/components/comunidadEscolar/ProgramasOfertas.astro";
+import FechasCE from "@/components/escuelas/FechasCE.astro";
+import ConoceAprendizaje from "@/components/comunidadEscolar/ConoceAprendizaje.astro";
 
 
 const {titulo, imagenHero} = Astro.props;
@@ -21,6 +23,8 @@ const {titulo, imagenHero} = Astro.props;
     <HeroCE/>
     <NavCE/>
     <NoticiasCE/>
+    <FechasCE/>
+    <ConoceAprendizaje/>
     <ProgramasOfertas/>
     <Foros/>
     <BolsaTrabajo/>
@@ -36,5 +40,4 @@ const {titulo, imagenHero} = Astro.props;
     <Footer/>
 </Layout>
 
-<script src="../../src/scripts/calendar.js" defer></script>
-<script src="../../src/scripts/eventosCalendar.js"  defer></script>
+

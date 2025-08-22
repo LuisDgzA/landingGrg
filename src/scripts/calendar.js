@@ -230,6 +230,8 @@ function createCalendar(calendar, element, adjuster){
           number.className += " eventday";
 		  console.log("model",calendar.Model[n])
 		  number.setAttribute("data-src",calendar.Model[n].img )
+		  number.setAttribute("data-index",n )
+
         //   var title = document.createElement('span');
         //   title.className += "cld-title";
 		//   console.log(typeof calendar.Model[n].Link)
