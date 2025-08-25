@@ -1,4 +1,4 @@
-console.log("demo")
+// console.log("demo")
 var events = [
   
   {'type':'evento','Date': new Date(2025, 7, 10), 'Title': '25 year anniversary', "img": "https://universidadindex.com/assets/img/calendario/Noviembre-01.png"},  
@@ -10,11 +10,11 @@ var events = [
 
 
 const eventsInscripcion = events.filter(event => event.type === 'inscripcion')
-console.log("🚀 ~ eventsInscripcion:", eventsInscripcion)
+// console.log("🚀 ~ eventsInscripcion:", eventsInscripcion)
 const eventsNormal = events.filter(event => event.type === 'evento')
-console.log("🚀 ~ eventsNormal:", eventsNormal)
+// console.log("🚀 ~ eventsNormal:", eventsNormal)
 
-console.log(events)
+// console.log(events)
 var settings = {};
 var element = document.getElementById('caleandar');
 caleandar(element, eventsNormal, settings);

@@ -1,11 +1,12 @@
 ---
 import { personas as items } from "../../data/personas"
-
+import FlechaRojaDerecha from '@/assets/icons/flechaRojaDerecha.svg'
+import FlechaRojaIzquierda from '@/assets/icons/flechaRojaIzquierda.svg'
 ---
 
 <div class="bg-redGRG w-full">
     <div class="container mx-auto pt-12 pb-[18rem] mb-[30rem] relative">
-        <div class="w-full lg:w-[50%]">
+        <div class="w-full lg:w-[60%] mx-auto">
             <h2 class="text-64 text-center font-semibold text-white">Conoce a quienes hacen posible tu aprendizaje</h2>
         </div>
         <p class="text-center text-20 text-white mt-6 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, modi.</p>
@@ -31,6 +32,11 @@ import { personas as items } from "../../data/personas"
                         </ul>
                 </div>
             </div>
+             <div class="w-2/3 mx-auto flex justify-between mt-6">
+                 
+                <button id="btnTutoresLeft"><FlechaRojaIzquierda/></button>
+                <button id="btnTutoresRight"><FlechaRojaDerecha/></button>
+            </div>
         </div>
     </div>
 </div>
@@ -45,7 +51,7 @@ import { personas as items } from "../../data/personas"
         type: "loop",
         gap: "5rem",
         perPage: 3,
-        // arrows: true,
+        arrows: false,
         // focus: "center",
         classes: {
             pagination: 'splide__pagination paginationTutores',
@@ -63,19 +69,19 @@ import { personas as items } from "../../data/personas"
         // pagination: 'slider'
     }).mount();
         
-    // let btnnoticiasLeft = document.getElementById('btnnoticiasLeft')
-    //     btnnoticiasLeft.addEventListener('click', e => {
-    //     splideNoticias.go('-1')
+    let btnTutoresLeft = document.getElementById('btnTutoresLeft')
+    btnTutoresLeft.addEventListener('click', e => {
+    splideTutores.go('-1')
 
-        
-    // })
+    
+  })
 
-    // let btnnoticiasRight = document.getElementById('btnnoticiasRight')
-    //     btnnoticiasRight.addEventListener('click', e => {
-    //     splideNoticias.go('+1')
+   let btnTutoresRight = document.getElementById('btnTutoresRight')
+    btnTutoresRight.addEventListener('click', e => {
+    splideTutores.go('+1')
 
-        
-    // })
+    
+  })
 
 
 </script>

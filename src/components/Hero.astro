@@ -4,16 +4,16 @@ import Topbar from "./generics/Topbar.astro";
 import Arrow from "../../public/images/arrow.svg";
 import PlayCircle from "@/assets/icons/Play-circle.svg"
 import FechasTopbar from "./generics/FechasTopbar.astro";
+import FixedTopBar from "./generics/FixedTopBar.astro";
 
 const srcVideo = "/videos/song2.mp4"; // put your file in `public/videos/`
 ---
 
-<section class="hero-container text-white">
-    <FechasTopbar/>
-    <div class="container mx-auto relative">
-        <!-- <Inscripciones client:load/> -->
-        <Topbar/>
-        <div class="w-[85%] lg:w-[75%]  flex flex-col gap-[32px] pb-[5rem] md:pb-[8rem] ">
+<section class="hero-container text-white h-svh relative" >
+    <FixedTopBar/>
+    <div class="container mx-auto">
+        
+        <div class="w-[85%] lg:w-[75%]  flex flex-col gap-[32px] pb-[5rem] md:pb-[8rem] md:absolute bottom-[2rem]">
         
             <h1 class="text-50 leading-[120%] font-semibold">Desarrollamos el máximo potencial de nuestros colaboradores</h1>
             <p class="work font-light xl:text-2xl">La misión de la Universidad GRG es ser el centro de generación de competencias de los colaboradores, así como el eje de innovación y soluciones para los continuos retos del Grupo.</p>

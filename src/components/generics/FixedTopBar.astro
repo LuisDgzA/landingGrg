@@ -1,0 +1,34 @@
+---
+import FechasTopbar from "./FechasTopbar.astro";
+import Topbar from "./Topbar.astro";
+import CloseCircleBlack from '@/assets/icons/Close_Circle_black.svg'
+---
+
+<div class="fixed top-0 z-80 w-full">
+    <FechasTopbar/>
+    <div class="container mx-auto">
+        <Topbar/>
+    </div>
+</div>
+
+<div id="navBarResponsive" class="hidden w-full h-svh absolute z-300 bg-neutral-600/60">
+    <div class="w-[80%] max-w-[18rem] bg-amber-400 h-svh py-6 px-4 flex flex-col items-end relative ml-auto space-y-6 flex flex-col justify-around navbar-content">
+        <button id="btnCloseNavBar"><CloseCircleBlack/></button>
+        <p class="text-23 font-semibold text-black">Inicio de Inscripciones: <br><span>Mes y Dia Aqui 2025</span></p>
+        <div class="flex flex-col text-end space-y-8">
+            <a href="/"  rel="noopener noreferrer">Inicio</a>
+            <a href="/comunidadEscolar"  rel="noopener noreferrer">Comunidad Escolar</a>
+            <a href="/comunidadEscolar"  rel="noopener noreferrer">Escuelas</a>
+            <a href="/comunidadEscolar"  rel="noopener noreferrer">Aspirantes</a>
+            <a href="/comunidadEscolar"  rel="noopener noreferrer">Contacto</a>
+
+            <a href="/comunidadEscolar"  rel="noopener noreferrer" class="call-to-actions-general">Acceso a Plataforma</a>
+        </div>
+        <div class="w-full flex flex-col">
+            <p class="text-center uppercase mb-5">nuestras redes</p>
+            <p class="text-center ">Siguenos en</p>
+
+        </div>
+
+    </div>
+</div>

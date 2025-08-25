@@ -18,8 +18,8 @@
     margin: auto;
     overflow: hidden;
     padding: 1rem 1rem;
-    background-color: var(--main-color);
-    color: #fff;
+    /* background-color: var(--main-color); */
+    color: black;
   }
   .cld-datetime .today{
     position: relative;
@@ -55,10 +55,10 @@
 
 .cld-labels{
   margin-bottom: 0px;
-  background-color: #ebebeb;
+  /* background-color: #ebebeb; */
 }
 .cld-days{
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
 
 }
   .cld-label, .cld-day{
