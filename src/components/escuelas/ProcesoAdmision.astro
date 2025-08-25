@@ -108,7 +108,9 @@ import { personas as items } from "../../data/personas"
 
     function updateCarousel(animate = true) {
         const slideWidth = slides[0].offsetWidth + 24;
+        // console.log("🚀 ~ updateCarousel ~ slideWidth:", slideWidth)
         const centerOffset = (carousel.parentElement.offsetWidth - slideWidth) / 2;
+        // console.log("🚀 ~ updateCarousel ~ centerOffset:", centerOffset)
         carousel.style.transition = animate ? "transform 0.5s ease-in-out" : "none";
         carousel.style.transform = "translateX(" + (centerOffset - (currentIndex + 1) * slideWidth) + "px)";
 

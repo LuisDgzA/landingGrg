@@ -82,7 +82,7 @@ const {titleCarousel} = Astro.props
   <div class="mt-6 flex justify-center items-center gap-4 py-9">
     <button
       id="prev"
-      class="hidden md:inline-flex text-red-700 text-xl px-3 py-2 z-20"
+      class="inline-flex text-red-700 text-xl px-3 py-2 z-20"
     >
       &#10094;
     </button>
@@ -95,7 +95,7 @@ const {titleCarousel} = Astro.props
 
     <button
       id="next"
-      class="hidden md:inline-flex text-red-700 text-xl px-3 py-2 z-20"
+      class="inline-flex text-red-700 text-xl px-3 py-2 z-20"
     >
       &#10095;
     </button>
@@ -111,8 +111,12 @@ const {titleCarousel} = Astro.props
     let transitioning = false;
 
     function updateCarousel(animate = true) {
+        // console.log('updateoriginal')
         const slideWidth = slides[0].offsetWidth + 24;
+        // console.log("🚀 ~ updateCarousel ~ slideWidth:", slideWidth)
+        
         const centerOffset = (carousel.parentElement.offsetWidth - slideWidth) / 2;
+        // console.log("🚀 ~ updateCarousel ~ centerOffset:", centerOffset)
         carousel.style.transition = animate ? "transform 0.5s ease-in-out" : "none";
         carousel.style.transform = "translateX(" + (centerOffset - (currentIndex + 1) * slideWidth) + "px)";
 

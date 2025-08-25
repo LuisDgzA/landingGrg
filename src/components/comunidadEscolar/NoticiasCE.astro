@@ -1,30 +1,130 @@
+---
+import { personas as items } from "../../data/personas"
+import GRGAmarillo from '@/assets/icons/GRG_amarillo.svg'
+import FlechaRojaDerecha from '@/assets/icons/flechaRojaDerecha.svg'
+import FlechaRojaIzquierda from '@/assets/icons/flechaRojaIzquierda.svg'
+
+
+---
+
 <div class="container mx-auto">
-    <div class="flex gap-8 mt-12">
-        <div class="w-2/5 bg-redGRG text-white rounded-2xl px-[3rem] py-[2rem] space-y-8">
-            <h3 class="text-[45px] font-semibold">Conferencia</h3>
+    <div class="flex flex-col lg:flex-row gap-8 mt-12">
+        <div class="w-full lg:w-2/5 bg-redGRG text-white rounded-2xl px-[3rem] py-[2rem] space-y-8">
+            <h3 class="text-45 font-semibold">Conferencia</h3>
             <p class="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis quam eu dolor semper eleifend.</p>
             <p class="text-2xl font-semibold border-b-1 border-white inline-block">!Registrate Ahora!</p>
         </div>
-        <div class="w-3/5 bg-redGRG text-white rounded-2xl px-[3rem] py-[2rem] space-y-2 text-right flex flex-col justify-end">
+        <div class="w-full lg:w-3/5 bg-[url(/images/graduacionesCE.jpg)] bg-center bg-cover text-white rounded-2xl px-[3rem] py-[2rem] space-y-2 text-right flex flex-col justify-end">
             <div class="">
-                <h3 class="text-[45px] font-semibold">Graduaciones</h3>
+                <h3 class="text-45 font-semibold">Graduaciones</h3>
                 <p class="text-xl">Participa en la ceremonia oficial de egreso y reconoce el esfuerzo que te llevó hasta aquí.</p>
                 <p class="text-2xl font-semibold border-b-1 border-white inline-block">Agregar a mi calendario!</p>
             </div>
         </div>
     </div>
-    <div class="flex gap-8 mt-8">        
-        <div class="w-3/5 bg-redGRG text-white rounded-2xl px-[3rem] py-[2rem] space-y-2 text-right flex flex-col justify-end">
+    <div class="flex flex-col lg:flex-row gap-8 mt-8">        
+        <div class="w-full lg:w-3/5 bg-[url(/images/graduacionesCE2.jpg)] bg-center bg-cover text-white rounded-2xl px-[3rem] py-[2rem] space-y-2 text-right flex flex-col justify-end">
             <div class="">
-                <h3 class="text-[45px] font-semibold">Graduaciones</h3>
+                <h3 class="text-45 font-semibold">Graduaciones</h3>
                 <p class="text-xl">Participa en la ceremonia oficial de egreso y reconoce el esfuerzo que te llevó hasta aquí.</p>
                 <p class="text-2xl font-semibold border-b-1 border-white inline-block">Agregar a mi calendario!</p>
             </div>
         </div>
-        <div class="w-2/5 bg-redGRG text-white rounded-2xl px-[3rem] py-[2rem] space-y-8">
-            <h3 class="text-[45px] font-semibold">Noticias</h3>
+        <div class="w-full lg:w-2/5 bg-redGRG text-white rounded-2xl px-[3rem] py-[2rem] space-y-8">
+            <h3 class="text-45 font-semibold">Noticias</h3>
             <p class="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis quam eu dolor semper eleifend.</p>
-            <p class="text-2xl font-semibold border-b-1 border-white inline-block">Ver Más Noticias</p>
+            <p class="text-2xl font-semibold border-b-1 border-white inline-block" id="triggerNoticias" aria-haspopup="dialog" aria-expanded="false" aria-controls="modalNoticias" data-hs-overlay="#modalNoticias">Ver Más Noticias</p>
         </div>
     </div>
 </div>
+
+<div id="modalNoticias" class="hs-overlay [--overlay-backdrop:static] hidden size-full fixed top-0 start-0 z-80 overflow-x-hidden overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="hs-basic-modal-label">
+  <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg lg:max-w-3xl sm:w-full m-3 sm:mx-auto min-h-[calc(100%-56px)] flex items-center">
+    <div class="overflow-hidden relative w-full   border border-gray-200 shadow-2xs rounded-xl pointer-events-auto bg-white shadow-neutral-700/70">
+      
+      
+        <button type="button" class="size-8 absolute right-2 top-2 z-50 inline-flex justify-center items-center gap-x-2 rounded-full bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none border-1 border-neutral-700 text-neutral-700 focus:bg-neutral-600" aria-label="Close" data-hs-overlay="#modalNoticias">
+          <span class="sr-only">Close</span>
+          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18"></path>
+            <path d="m6 6 12 12"></path>
+          </svg>
+        </button>
+       <div class="container mx-auto pb-12">
+            <div class="flex items-center">
+                <GRGAmarillo/>
+                <div class="flex flex-col">
+                    <p class="text-4xl font-semibold text-redGRG">Noticias breves</p>
+                    <p class="text-3xl font-semibold text-lightGrayGRG">Mantente al día con lo más revelante</p>
+                </div>
+            </div>
+            <div class="splide" id="splideNoticias" role="group" aria-label="Splide Basic HTML Example">
+                <ul class="splide__pagination"></ul>
+                <div class="splide__track">                        
+                        <ul class="splide__list">                            
+                            
+                            {
+                                items.map((item) => (
+                                    <li class="splide__slide">
+                                        <div class="bg-grayExtra rounded-lg bg-gray-300 space-y-6 p-4">
+                                            <img class="w-full h-[5rem] object-cover" src={item.image} alt="">
+                                            <p class="text-redGRG">Noticias</p>
+                                            <p class="text-3xl font-semibold">Titulo</p>
+                                            <p class="text-xl font-semibold">Septiembre 12 / 2025</p>
+                                            <p class="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem magnam molestias corrupti tempora expedita distinctio necessitatibus ea, nemo nisi animi, modi minus beatae sequi. Esse.</p>
+                                        </div>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                </div>
+            </div>
+            <div class="w-2/3 mx-auto flex justify-between mt-6">
+                 
+                <button id="btnnoticiasLeft"><FlechaRojaIzquierda/></button>
+                <button id="btnnoticiasRight"><FlechaRojaDerecha/></button>
+            </div>
+       </div>
+      
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<script>
+    import "@splidejs/splide"
+    import '@splidejs/splide/css';
+
+    import Splide from "@splidejs/splide";
+
+  let splideNoticias = new Splide("#splideNoticias", {
+    type: "loop",
+    // gap: "20vw",
+    arrows: false,
+    focus: "center",
+    // pagination: 'slider'
+  }).mount();
+    
+     let btnnoticiasLeft = document.getElementById('btnnoticiasLeft')
+    btnnoticiasLeft.addEventListener('click', e => {
+    splideNoticias.go('-1')
+
+    
+  })
+
+   let btnnoticiasRight = document.getElementById('btnnoticiasRight')
+    btnnoticiasRight.addEventListener('click', e => {
+    splideNoticias.go('+1')
+
+    
+  })
+
+
+</script>
+
+<script is:inline>
+   
+</script>

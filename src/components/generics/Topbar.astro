@@ -4,23 +4,27 @@ import IconoRojoBlanco from '../../../public/images/icono_blanco_rojo.svg'
 
 <div class="flex justify-between items-center">
     <IconoRojoBlanco/>
+    <div class="flex items-center gap-4 lg:hidden cursor-pointer" id="btnNavBarResponsive">
+        <span>Menú</span>
+        <IconoRojoBlanco/>
+    </div>
     <nav class="hidden lg:block">
         <ul class="flex gap-4 text-white py-[51px]">
             <li class="topbar-link">
                 <a href="/">Inicio</a>                
             </li>
             <li class="topbar-link submenu-dropdown">Comunidad Escolar
-                <div class="bg-gray-300 flex flex-col text-black absolute -left-[1rem] top-[4rem] w-max p-8 space-y-4 hidden dropdown">
-                    <a href="/comunidadEscolar">Boletín Educativo</a>
-                    <a href="/comunidadEscolar">Bolsa de Trabajo</a>
-                    <a href="/comunidadEscolar">Nuestros Docentes</a>
-                    <a href="/comunidadEscolar">Calendario Académico</a>
-                    <a href="/comunidadEscolar">Becas y Otros Beneficios</a>
+                <div class="bg-gray-300 flex flex-col text-black absolute -left-[1rem] top-[4rem] w-max p-8 space-y-4 hidden dropdown z-100">
+                    <a href="./comunidadEscolar">Boletín Educativo</a>
+                    <a href="./comunidadEscolar">Bolsa de Trabajo</a>
+                    <a href="./comunidadEscolar">Nuestros Docentes</a>
+                    <a href="./comunidadEscolar">Calendario Académico</a>
+                    <a href="./comunidadEscolar">Becas y Otros Beneficios</a>
                 </div>
             </li>
             <li class="topbar-link submenu-dropdown">
                 Escuelas
-                <div class="bg-gray-300 flex flex-col text-black absolute -left-[1rem] top-[4rem] w-max p-8 space-y-4 hidden dropdown">
+                <div class="bg-gray-300 flex flex-col text-black absolute -left-[1rem] top-[4rem] w-max p-8 space-y-4 hidden dropdown z-100">
                     <a href="javascript:void(0);">1 - De Tecnología y Ciencia de Datos</a>
                     <a href="javascript:void(0);">2 -Alimentos</a>
                     <a href="javascript:void(0);">3 - Servicio</a>
@@ -40,25 +44,6 @@ import IconoRojoBlanco from '../../../public/images/icono_blanco_rojo.svg'
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const DropdownsMenus = document.querySelectorAll('.submenu-dropdown')
-        const Dropdowns = document.querySelectorAll('.dropdown')
-        DropdownsMenus.forEach(dropdown => {
-            dropdown.addEventListener('click', () => {
-                Dropdowns.forEach(dd => {
-                    dd.classList.add('hidden')
-                })
-                const DropdownItem = dropdown.querySelector('.dropdown')
-                DropdownItem?.classList.toggle('hidden')
-            })
-        })
-        document.addEventListener('click', (e) => {
-            // 3. if the click target isn’t inside *any* dropdown…
-            if (!e.target.closest('.submenu-dropdown')) {
-                // …handle your “outside” click here
-                console.log('Clicked outside all dropdowns!');
-                // e.g. close all dropdowns
-                Dropdowns.forEach(dd => dd.classList.add('hidden'));
-            }
-        });
+        
     })
 </script>

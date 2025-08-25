@@ -3,19 +3,19 @@ import FechasTopbar from "../generics/FechasTopbar.astro";
 import Topbar from "../generics/Topbar.astro";
 import Arrow from "../../../public/images/arrow.svg";
 import PlayCircle from "@/assets/icons/Play-circle.svg"
+import FixedTopBar from "../generics/FixedTopBar.astro";
 
 const srcVideo = "/videos/song2.mp4"; 
 ---
 
 <section class="text-white bg-cover h-svh relative bg-[url(/images/comunidadEscolarHero.jpg)] bg-center" >
-    <FechasTopbar/>
+    <FixedTopBar/>
     <div class="container mx-auto">
     <!-- <Inscripciones client:load/> -->
-        <Topbar/>
-        <div class="w-[85%] lg:w-[75%]  flex flex-col gap-[32px] pb-[5rem] absolute bottom-[2rem]">
+        <div class="w-[80%] lg:w-[75%]  flex flex-col gap-[32px] pb-[5rem] mt-8 md:mt-0 md:absolute bottom-[2rem]">
         
-            <h1 class="text-[1.8rem] md:text-[2.2rem] xl:text-[50px]  leading-[120%] font-semibold">Comunidad Escolar</h1>
-            <p class="work font-light xl:text-2xl">Mantente conectado con nuestra comunidad escolar y entérate de noticias, eventos y próximas graduaciones. Desde aquí podrás acceder a tu Campus Virtual, a la bolsa de trabajo y a diversos servicios y beneficios exclusivos para nuestros estudiantes. También encontrarás acceso directo a programas y certificaciones de formación continua que complementan tu desarrollo profesional. </p>
+            <h1 class="text-50  leading-[120%] font-semibold">Comunidad Escolar</h1>
+            <p class="work font-light text-23">Mantente conectado con nuestra comunidad escolar y entérate de noticias, eventos y próximas graduaciones. Desde aquí podrás acceder a tu Campus Virtual, a la bolsa de trabajo y a diversos servicios y beneficios exclusivos para nuestros estudiantes. También encontrarás acceso directo a programas y certificaciones de formación continua que complementan tu desarrollo profesional. </p>
             <button class="call-to-actions-general xl:text-xl flex items-center gap-4" aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-basic-modal" data-hs-overlay="#hs-basic-modal">Tu Campus en un clic <PlayCircle/></button>
         </div>
         <Arrow class="go-to-bottom absolute bottom-[5rem] right-6 cursor-pointer"></Arrow>

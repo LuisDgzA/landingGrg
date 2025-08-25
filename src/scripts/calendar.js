@@ -4,7 +4,7 @@
   (◠‿◠✿)
 */
 
-console.log("caleandar")
+// console.log("caleandar")
 var Calendar = function(model, options, date){
   // Default Values
   this.Options = {
@@ -143,7 +143,7 @@ function createCalendar(calendar, element, adjuster){
             createCalendar(calendar, element, -1);
           }
         });
-        rwd.innerHTML = '<svg height="15" width="15" viewBox="0 0 75 100" fill="rgba(255,255,255,0.9)"><polyline points="0,50 75,0 75,100"></polyline></svg>';
+        rwd.innerHTML = '<svg height="15" width="15" viewBox="0 0 75 100" fill="rgba(0,0,0,0.9)"><polyline points="0,50 75,0 75,100"></polyline></svg>';
         datetime.appendChild(rwd);
       }
       var today = document.createElement('div');
@@ -161,7 +161,7 @@ function createCalendar(calendar, element, adjuster){
             createCalendar(calendar, element, 1);
           }
         });
-        fwd.innerHTML = '<svg height="15" width="15" viewBox="0 0 75 100" fill="rgba(255,255,255,0.9)"><polyline points="0,0 75,50 0,100"></polyline></svg>';
+        fwd.innerHTML = '<svg height="15" width="15" viewBox="0 0 75 100" fill="rgba(0,0,0,0.9)"><polyline points="0,0 75,50 0,100"></polyline></svg>';
         datetime.appendChild(fwd);
       }
       if(calendar.Options.DatetimeLocation){
@@ -228,8 +228,10 @@ function createCalendar(calendar, element, adjuster){
         var toDate = new Date(calendar.Selected.Year, calendar.Selected.Month, (i+1));
         if(evDate.getTime() == toDate.getTime()){
           number.className += " eventday";
-		  console.log("model",calendar.Model[n])
+		  // console.log("model",calendar.Model[n])
 		  number.setAttribute("data-src",calendar.Model[n].img )
+		  number.setAttribute("data-index",n )
+
         //   var title = document.createElement('span');
         //   title.className += "cld-title";
 		//   console.log(typeof calendar.Model[n].Link)
