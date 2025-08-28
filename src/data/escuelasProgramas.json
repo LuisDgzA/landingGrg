@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "imgSrc": "../assets/images/e_tec_ciencia.svg",
+        "title": "Tecnología y Ciencia de Datos",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada dolor sed arcu suscipit finibus ut a est. Praesent ex lorem, sollicitudin nec diam et, viverra placerat erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec at semper magna. Aliquam quis vulputate arcu, ut accumsan nibh. ",
+        "pageRoute": "sistemas",
+        "shortTitle": "Sistemas",
+        "heroDescription": "Soluciones tecnológicas personalizadas que se adaptan perfectamente a las necesidades y objetivos específicos de tu negocio",
+        "heroImgSrc": "../assets/images/hero_tecnologia.jpg",
+        "programas": [
+
+            {
+                "title": "Diplomado en Inteligencia Artificial Aplicada al Negocio Restaurantero",
+                "description": "Formar a los colaboradores en el uso estratégico de datos, inteligencia artificial y herramientas digitales para resolver retos del negocio, mejorar procesos y fortalecer la experiencia del cliente"
+            },
+            {
+                "title": "Diplomado en Inteligencia Artificial Aplicada al Negocio Restaurantero",
+                "description": "Formar a los colaboradores en el uso estratégico de datos, inteligencia artificial y herramientas digitales para resolver retos del negocio, mejorar procesos y fortalecer la experiencia del cliente"
+            },
+            {
+                "title": "Diplomado en Inteligencia Artificial Aplicada al Negocio Restaurantero",
+                "description": "Formar a los colaboradores en el uso estratégico de datos, inteligencia artificial y herramientas digitales para resolver retos del negocio, mejorar procesos y fortalecer la experiencia del cliente"
+            },
+            {
+                "title": "Diplomado en Inteligencia Artificial Aplicada al Negocio Restaurantero",
+                "description": "Formar a los colaboradores en el uso estratégico de datos, inteligencia artificial y herramientas digitales para resolver retos del negocio, mejorar procesos y fortalecer la experiencia del cliente"
+            },
+            {
+                "title": "Diplomado en Inteligencia Artificial Aplicada al Negocio Restaurantero",
+                "description": "Formar a los colaboradores en el uso estratégico de datos, inteligencia artificial y herramientas digitales para resolver retos del negocio, mejorar procesos y fortalecer la experiencia del cliente"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "imgSrc": "../assets/images/e_alimentos.svg",
+        "title": "Alimentos María Esperanza Fernández Cordero (MEFC)",
+        "description": "Contamos con el más actualizado sistema de inteligencia artificial y ciencia de datos que nos permite contar con asesores personalizados para nuestros colaboradores, lo que permite que nuestros colaboradores puedan contar con asesores personalizados a sus muy particulares inquietudes y necesidades.",
+        "pageRoute": "sistemas",
+        "shortTitle": "Sistemas",
+        "heroDescription": "Soluciones tecnológicas personalizadas que se adaptan perfectamente a las necesidades y objetivos específicos de tu negocio",
+        "heroImgSrc": "../assets/images/hero_tecnologia.jpg",
+        "programas": [
+
+            {
+                "title": "Certificación en Calidad e Innovación Gastronómica con Tecnología",
+                "description": "Desarrollar competencias en chefs y equipos para garantizar estándares internacionales en insumos, procesos y servicio, apoyados en..."
+            },
+            {
+                "title": "Certificación en Calidad e Innovación Gastronómica con Tecnología",
+                "description": "Desarrollar competencias en chefs y equipos para garantizar estándares internacionales en insumos, procesos y servicio, apoyados en..."
+            },
+            {
+                "title": "Certificación en Calidad e Innovación Gastronómica con Tecnología",
+                "description": "Desarrollar competencias en chefs y equipos para garantizar estándares internacionales en insumos, procesos y servicio, apoyados en..."
+            },
+            {
+                "title": "Certificación en Calidad e Innovación Gastronómica con Tecnología",
+                "description": "Desarrollar competencias en chefs y equipos para garantizar estándares internacionales en insumos, procesos y servicio, apoyados en..."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "imgSrc": "../assets/images/e_servicio_exp.svg",
+        "title": "Servicio y Experiencia del Cliente",
+        "description": "Orientada a desarrollar e implementar programas relacionados a capacitar a nuestros colaboradores con las técnicas de atención, promoción, relacionamiento, servicio y ventas para brindar experiencias memorables a nuestros clientes.",
+        "pageRoute": "sistemas",
+        "shortTitle": "Sistemas",
+        "heroDescription": "Soluciones tecnológicas personalizadas que se adaptan perfectamente a las necesidades y objetivos específicos de tu negocio",
+        "heroImgSrc": "../assets/images/hero_tecnologia.jpg",
+        "programas": [
+
+            {
+                "title": "Diplomado en Calidad de Atención y Experiencias Memorables",
+                "description": "Profesionalizar al personal en estándares internacionales de servicio, atención personalizada y modelos de hospitalidad apoyados en tecnología."
+            },
+            {
+                "title": "Diplomado en Calidad de Atención y Experiencias Memorables",
+                "description": "Profesionalizar al personal en estándares internacionales de servicio, atención personalizada y modelos de hospitalidad apoyados en tecnología."
+            },
+            {
+                "title": "Diplomado en Calidad de Atención y Experiencias Memorables",
+                "description": "Profesionalizar al personal en estándares internacionales de servicio, atención personalizada y modelos de hospitalidad apoyados en tecnología."
+            },
+            {
+                "title": "Diplomado en Calidad de Atención y Experiencias Memorables",
+                "description": "Profesionalizar al personal en estándares internacionales de servicio, atención personalizada y modelos de hospitalidad apoyados en tecnología."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "imgSrc": "../assets/images/e_desarrollo_bienestar.svg",
+        "title": "De Desarrollo y Bienestar",
+        "description": "Orientada a desarrollar e implementar programas relacionados a capacitar a nuestros colaboradores con las técnicas de atención, promoción, relacionamiento, servicio y ventas para brindar experiencias memorables a nuestros clientes.",
+        "pageRoute": "sistemas",
+        "shortTitle": "Sistemas",
+        "heroDescription": "Soluciones tecnológicas personalizadas que se adaptan perfectamente a las necesidades y objetivos específicos de tu negocio",
+        "heroImgSrc": "../assets/images/hero_tecnologia.jpg",
+        "programas": [
+
+            {
+                "title": "Certificación en Bienestar Integral y Productividad Laboral",
+                "description": "Potenciar el bienestar físico, emocional y profesional de los colaboradores, generando un equilibrio entre productividad y salud integral."
+            },
+            {
+                "title": "Certificación en Bienestar Integral y Productividad Laboral",
+                "description": "Potenciar el bienestar físico, emocional y profesional de los colaboradores, generando un equilibrio entre productividad y salud integral."
+            },
+            {
+                "title": "Certificación en Bienestar Integral y Productividad Laboral",
+                "description": "Potenciar el bienestar físico, emocional y profesional de los colaboradores, generando un equilibrio entre productividad y salud integral."
+            },
+            {
+                "title": "Certificación en Bienestar Integral y Productividad Laboral",
+                "description": "Potenciar el bienestar físico, emocional y profesional de los colaboradores, generando un equilibrio entre productividad y salud integral."
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "imgSrc": "../assets/images/e_otro.svg",
+        "title": "De Desarrollo y Bienestar",
+        "description": "Orientada a desarrollar e implementar programas relacionados a capacitar a nuestros colaboradores con las técnicas de atención, promoción, relacionamiento, servicio y ventas para brindar experiencias memorables a nuestros clientes.",
+        "pageRoute": "sistemas",
+        "shortTitle": "Sistemas",
+        "heroDescription": "Soluciones tecnológicas personalizadas que se adaptan perfectamente a las necesidades y objetivos específicos de tu negocio",
+        "heroImgSrc": "../assets/images/hero_tecnologia.jpg",
+        "programas": [
+
+            {
+                "title": "Maestría en Liderazgo Estratégico e Innovación Empresarial",
+                "description": "Formar a líderes capaces de dirigir con visión estratégica, innovación tecnológica y enfoque en el cliente, alineados al crecimiento global ..."
+            },
+            {
+                "title": "Maestría en Liderazgo Estratégico e Innovación Empresarial",
+                "description": "Formar a líderes capaces de dirigir con visión estratégica, innovación tecnológica y enfoque en el cliente, alineados al crecimiento global ..."
+            },
+            {
+                "title": "Maestría en Liderazgo Estratégico e Innovación Empresarial",
+                "description": "Formar a líderes capaces de dirigir con visión estratégica, innovación tecnológica y enfoque en el cliente, alineados al crecimiento global ..."
+            },
+            {
+                "title": "Maestría en Liderazgo Estratégico e Innovación Empresarial",
+                "description": "Formar a líderes capaces de dirigir con visión estratégica, innovación tecnológica y enfoque en el cliente, alineados al crecimiento global ..."
+            }
+        ]
+    }
+    
+]

@@ -17,6 +17,9 @@
         @apply  px-4;
     }
 }
+/* *{
+    border: unset;
+} */
 
 html{
     scroll-behavior: smooth;
@@ -76,7 +79,7 @@ body{
 }
 
 .egresado-number{
-    @apply text-[120px] font-semibold text-redGRG leading-[120px];
+    @apply  font-semibold text-redGRG ;
 }
 
 .splide:not(.is-overflow) .splide__pagination {
@@ -97,6 +100,7 @@ body{
 } */
 
 .text-120{
+    line-height: 1;
     @apply text-[64px] xl:text-[120px];
 
 }

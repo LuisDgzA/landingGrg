@@ -3,22 +3,24 @@
 import Topbar from "../generics/Topbar.astro";
 import Arrow from "../../../public/images/arrow.svg";
 import { clsx } from 'clsx';
+import FixedTopBar from "../generics/FixedTopBar.astro";
 
 const {titulo, imagenHero} = Astro.props;
 const bgClass = `bg-[url(${imagenHero})] text-white`
 ---
 
 <section class="text-white bg-cover" style=`background-image: url('${imagenHero}');`>
-    <div class="container mx-auto relative">
+    <FixedTopBar/>
+    <div class="container mx-auto relative h-[449px]">
         <!-- <Inscripciones client:load/> -->
-        <Topbar/>
-        <div class="w-[85%] lg:w-[75%] font-bold flex flex-col gap-[32px] pb-[5rem] md:pb-[8rem] ">
         
-            <p class="work font-light xl:text-2xl">Nuestras Escuelas</p>
-            <h1 class="text-[1.8rem] md:text-[2.2rem] xl:text-5xl  leading-[120%]">{titulo}</h1>
+        <div class="w-[85%] lg:w-[75%] font-bold flex flex-col gap-[32px] pb-4 absolute bottom-4">
+        
+            <p class="work font-light text-23">Nuestras Escuelas</p>
+            <h1 class="text-50  leading-[120%]">{titulo}</h1>
 
         </div>
-        <Arrow class="go-to-bottom absolute bottom-[5rem] right-6 cursor-pointer"></Arrow>
+        <Arrow class="go-to-bottom absolute bottom-[1rem] right-6 cursor-pointer"></Arrow>
     </div>
 
 </section>

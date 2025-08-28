@@ -1,0 +1,64 @@
+---
+import "@/assets/css/main.css"
+import Layout from '@/layouts/Layout.astro';
+import HeroEscuela from '@/components/escuelas/HeroEscuela.astro';
+
+import type { GetStaticPaths } from 'astro';
+import { getCollection } from 'astro:content';
+import ConoceElPrograma from "@/components/escuelas/ConoceElPrograma.astro";
+import ConoceMas from "@/components/escuelas/ConoceMas.astro";
+import InformacionAcademica from "@/components/escuelas/InformacionAcademica.astro";
+import PerfilEgresado from "@/components/escuelas/PerfilEgresado.astro";
+import ProcesoAdmision from "@/components/escuelas/ProcesoAdmision.astro";
+import Ventajas from "@/components/escuelas/Ventajas.astro";
+import Footer from "@/components/generics/Footer.astro";
+
+export const getStaticPaths = (async () => {
+
+    const programas = await getCollection('programas')
+    console.log("🚀 ~ programas:", programas)
+
+    const arrayPoke = programas.map(({data:{
+            route, title, claveRVOE, claveEscuela,
+            inscripcion, heroImgSrc, description,
+            imgSrc, duracion, materias,
+            modalidad
+        }}) => (
+        {
+            params:{
+                name: route
+            },
+            props:{
+                title,
+                claveRVOE,
+                claveEscuela,
+                inscripcion,
+                heroImgSrc,
+                description,
+                imgSrc,
+                duracion,
+                materias,
+                modalidad
+            }
+        }
+    ))
+
+    return arrayPoke;
+}) satisfies GetStaticPaths;
+
+const { name } = Astro.params;
+const { title, claveRVOE, claveEscuela, inscripcion, heroImgSrc, description, imgSrc, duracion, materias, modalidad } = Astro.props;
+console.log("hero_image",heroImgSrc)
+---
+
+<Layout>
+    <HeroEscuela titulo={title} imagenHero={heroImgSrc.src}/>
+	<ConoceElPrograma claveRvoe={claveRVOE} claveEscuela={claveEscuela} fechaInscripcion={inscripcion} description={description} imgConoce={imgSrc.src}/>
+    <InformacionAcademica duracion={duracion} materias={materias} modalidad={modalidad}/>
+	<ProcesoAdmision/>
+	<ConoceMas/>
+	<PerfilEgresado/>
+	<Ventajas/>
+	<Footer/>
+
+</Layout>
