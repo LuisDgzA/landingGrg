@@ -1,0 +1,51 @@
+---
+import FechasTopbar from "../generics/FechasTopbar.astro";
+import Topbar from "../generics/Topbar.astro";
+import Arrow from "../../../public/images/arrow.svg";
+import PlayCircle from "@/assets/icons/Play-circle.svg"
+import FixedTopBar from "../generics/FixedTopBar.astro";
+
+const srcVideo = "/videos/song2.mp4"; 
+---
+
+<section class="text-white bg-cover h-svh relative bg-[url(/images/heroEscuela.jpg)] bg-center" >
+    <FixedTopBar/>
+    <div class="container mx-auto">
+    <!-- <Inscripciones client:load/> -->
+        <div class="w-[80%] lg:w-[75%]  flex flex-col gap-[32px] pb-[5rem] mt-8 md:mt-0 md:absolute bottom-[2rem]">
+        
+            <h2 class="text-50  leading-[120%] font-semibold">Nuestras Escuelas</h2>
+            <p class="work font-light text-23">Conoce nuestras escuelas y descubre la variedad de programas académicos que ofrece cada una. Explora las áreas de estudio, sus planes de formación y las oportunidades que brindan para tu desarrollo profesional. Accede directamente a la información detallada de cada programa y elige el que mejor se adapte a tus objetivos.</p>
+            <button class="call-to-actions-general xl:text-xl flex items-center gap-4" aria-haspopup="dialog" aria-expanded="false" aria-controls="modalOfertaEducativa" data-hs-overlay="#modalOfertaEducativa">Nuestra Oferta Educativa <PlayCircle/></button>
+        </div>
+        <Arrow class="go-to-bottom absolute bottom-[5rem] right-6 cursor-pointer"></Arrow>
+    </div>
+
+</section>
+<div id="modalOfertaEducativa" class="hs-overlay [--overlay-backdrop:static] hidden size-full fixed top-0 start-0 z-80 overflow-x-hidden overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="modalOfertaEducativa-label">
+    <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-56px)] flex items-center">
+        <div class="overflow-hidden relative w-full   border border-gray-200 shadow-2xs rounded-xl pointer-events-auto bg-neutral-800 border-neutral-700 shadow-neutral-700/70 h-[15rem]">
+        
+        
+            <button type="button" class="size-8 absolute right-2 top-2 z-50 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none bg-neutral-700 hover:bg-neutral-600 text-neutral-400 focus:bg-neutral-600" aria-label="Close" data-hs-overlay="#modalOfertaEducativa">
+            <span class="sr-only">Close</span>
+            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 6 6 18"></path>
+                <path d="m6 6 12 12"></path>
+            </svg>
+            </button>
+            <video
+            src={srcVideo}
+            controls
+            class="w-full h-full max-h-[40rem] object-contain"
+            
+            poster="/videos/my-promo-poster.jpg"
+            >
+            <!-- Fallback if browser doesn’t support MP4 -->
+            Sorry, your browser doesn’t support embedded videos.
+            </video>
+        
+        
+        </div>
+    </div>
+</div>

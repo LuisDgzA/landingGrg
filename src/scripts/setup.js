@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded',() => {
     const btnCloseNavBar = document.querySelector('#btnCloseNavBar')
     const navBarResponsive = document.querySelector('#navBarResponsive')
 
+    const Dropdowns = document.querySelectorAll('.dropdown')
+
+
     
 
     document.addEventListener('click', (e) => {
@@ -24,7 +27,7 @@ document.addEventListener('DOMContentLoaded',() => {
             // …handle your “outside” click here
             // console.log('Clicked outside all dropdowns!');
             // e.g. close all dropdowns
-            Dropdowns.forEach(dd => dd.classList.add('hidden'));
+            // Dropdowns.forEach(dd => dd.classList.add('hidden'));
             // navBarResponsive.classList.add('hidden')
         }
         console.log(navbarContent.classList.contains('hidden'))
@@ -44,14 +47,15 @@ document.addEventListener('DOMContentLoaded',() => {
     })
 
     const DropdownsMenus = document.querySelectorAll('.submenu-dropdown')
-    const Dropdowns = document.querySelectorAll('.dropdown')
     const navbarContent = document.querySelector('.navbar-content')
     DropdownsMenus.forEach(dropdown => {
         dropdown.addEventListener('click', () => {
-            Dropdowns.forEach(dd => {
-                dd.classList.add('hidden')
-            })
+            console.log('drop')
+            // Dropdowns.forEach(dd => {
+            //     dd.classList.add('hidden')
+            // })
             const DropdownItem = dropdown.querySelector('.dropdown')
+            console.log("🚀 ~ DropdownItem:", DropdownItem)
             DropdownItem?.classList.toggle('hidden')
         })
     })
