@@ -7,6 +7,7 @@ const escuelas = defineCollection({
     schema: ({image}) =>
         z.object({            
             imgSrc: image(),
+            idHTML: z.string(),
             // alt: z.string(),
             title: z.string(),
             description: z.string(),
