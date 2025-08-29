@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "idHTML": "escuela1",
         "imgSrc": "../assets/images/e_tec_ciencia.svg",
         "title": "Tecnología y Ciencia de Datos",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada dolor sed arcu suscipit finibus ut a est. Praesent ex lorem, sollicitudin nec diam et, viverra placerat erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec at semper magna. Aliquam quis vulputate arcu, ut accumsan nibh. ",
@@ -34,6 +35,7 @@
     },
     {
         "id": 2,
+        "idHTML": "escuela2",
         "imgSrc": "../assets/images/e_alimentos.svg",
         "title": "Alimentos María Esperanza Fernández Cordero (MEFC)",
         "description": "Contamos con el más actualizado sistema de inteligencia artificial y ciencia de datos que nos permite contar con asesores personalizados para nuestros colaboradores, lo que permite que nuestros colaboradores puedan contar con asesores personalizados a sus muy particulares inquietudes y necesidades.",
@@ -63,6 +65,7 @@
     },
     {
         "id": 3,
+        "idHTML": "escuela3",
         "imgSrc": "../assets/images/e_servicio_exp.svg",
         "title": "Servicio y Experiencia del Cliente",
         "description": "Orientada a desarrollar e implementar programas relacionados a capacitar a nuestros colaboradores con las técnicas de atención, promoción, relacionamiento, servicio y ventas para brindar experiencias memorables a nuestros clientes.",
@@ -92,6 +95,7 @@
     },
     {
         "id": 4,
+        "idHTML": "escuela4",
         "imgSrc": "../assets/images/e_desarrollo_bienestar.svg",
         "title": "De Desarrollo y Bienestar",
         "description": "Orientada a desarrollar e implementar programas relacionados a capacitar a nuestros colaboradores con las técnicas de atención, promoción, relacionamiento, servicio y ventas para brindar experiencias memorables a nuestros clientes.",
@@ -121,6 +125,7 @@
     },
     {
         "id": 5,
+        "idHTML": "escuela5",
         "imgSrc": "../assets/images/e_otro.svg",
         "title": "De Desarrollo y Bienestar",
         "description": "Orientada a desarrollar e implementar programas relacionados a capacitar a nuestros colaboradores con las técnicas de atención, promoción, relacionamiento, servicio y ventas para brindar experiencias memorables a nuestros clientes.",

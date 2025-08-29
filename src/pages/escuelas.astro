@@ -7,7 +7,8 @@ import Layout from "@/layouts/Layout.astro";
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 const escuelas = await getCollection('escuelas')
-console.log(escuelas)
+import FlechaRojaDerecha from '@/assets/icons/flechaRojaDerecha.svg'
+import FlechaRojaIzquierda from '@/assets/icons/flechaRojaIzquierda.svg'
 ---
 
 
@@ -16,7 +17,7 @@ console.log(escuelas)
     <div class="container mx-auto my-[8rem] space-y-[8rem]">
         {
             escuelas.map(escuela => (
-                <div>
+                <div id={escuela.data.idHTML} class="anchor-target">
                     <div class="flex flex-col lg:flex-row gap-12 mb-10">
                         <Image class="w-full lg:w-[40%] order-2 lg:order-1 h-[95%] object-cover" src={escuela.data.imgSrc} alt={escuela.data.title}/>
                         <div class="w-full lg:w-[60%] order-1 lg:order-2 space-y-10">
@@ -45,6 +46,10 @@ console.log(escuelas)
                             </ul>
                         </div>
                     </div>
+                    <div class="w-1/4 mx-auto flex justify-between mt-6">                        
+                        <button class="btnGoLeft" id="btnnoticiasLeft"><FlechaRojaIzquierda/></button>
+                        <button class="btnGoRight" id="btnnoticiasRight"><FlechaRojaDerecha/></button>
+                    </div>
                 </div>
             ))
         }
@@ -60,19 +65,55 @@ console.log(escuelas)
     import '@splidejs/splide/css';
 
     import Splide from "@splidejs/splide";
-    var elms = document.getElementsByClassName( 'splide' );
+    const elms = document.querySelectorAll( '.splide' );
 
-    for ( var i = 0; i < elms.length; i++ ) {
-        new Splide( elms[ i ],{
+    elms.forEach(element => {
+        var carousel = new Splide(element,{
+            type: "loop",
             perPage: 2,
             gap: "5rem",
             perMove: 1,
+            arrows: false,
             breakpoints: {
                 769: {
                     perPage: 1,
                 },
                 
             }
-        } ).mount();
-    }
+        }).mount()
+        // console.log(element)
+        let prevBtn = element.parentElement?.querySelector('.btnGoLeft')
+        prevBtn?.addEventListener('click', () => {
+            carousel.go('-1')
+        })
+
+        let nextBtn = element.parentElement?.querySelector('.btnGoRight')
+        nextBtn?.addEventListener('click', () => {
+            carousel.go('+1')
+        })
+    })
+    // for ( var i = 0; i < elms.length; i++ ) {
+    //     new Splide( elms[ i ],{
+    //         perPage: 2,
+    //         gap: "5rem",
+    //         perMove: 1,
+    //         arrows: false,
+    //         breakpoints: {
+    //             769: {
+    //                 perPage: 1,
+    //             },
+                
+    //         }
+    //     } ).mount();
+    // }
+
+    // const btnsGoLeft = document.querySelectorAll('.btnGoLeft')
+    // const btnsGoRight = document.querySelectorAll('.btnGoRight')
+
+    // btnsGoLeft.forEach(btn => {
+    //     btn.addEventListener('click', () => {
+    //         console.log('clickleft')
+    //     })
+    // })
+
 </script>

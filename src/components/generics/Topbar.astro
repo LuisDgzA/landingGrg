@@ -1,5 +1,10 @@
 ---
+import { getCollection } from 'astro:content'
 import IconoRojoBlanco from '../../../public/images/icono_blanco_rojo.svg'
+
+const escuelas = await getCollection('escuelas')
+
+// console.log(escuelas)
 ---
 
 <div class="flex justify-between items-center">
@@ -9,7 +14,7 @@ import IconoRojoBlanco from '../../../public/images/icono_blanco_rojo.svg'
         <IconoRojoBlanco/>
     </div>
     <nav class="hidden lg:block">
-        <ul class="flex gap-4 text-white py-[51px]">
+        <ul class="flex gap-4 text-white py-[2.5rem]">
             <li class="topbar-link">
                 <a href="/">Inicio</a>                
             </li>
@@ -24,12 +29,17 @@ import IconoRojoBlanco from '../../../public/images/icono_blanco_rojo.svg'
             </li>
             <li class="topbar-link submenu-dropdown">
                 Escuelas
-                <div class="bg-gray-300 flex flex-col text-black absolute -left-[1rem] top-[4rem] w-max p-8 space-y-4 hidden dropdown z-100">
-                    <a href="javascript:void(0);">1 - De Tecnología y Ciencia de Datos</a>
+                <div class="bg-gray-300 flex flex-col text-black absolute -left-[1rem] top-[4rem] w-[25rem] max-w-[25rem] p-8 space-y-4 hidden dropdown z-100">
+                    {
+                        escuelas.map(({data:escuela},index) => (
+                            <a href={`escuelas#${escuela.idHTML}`}>{`${index+1} - `}{escuela.title}</a>
+                        ))
+                    }
+                    <!-- <a href="javascript:void(0);">1 - De Tecnología y Ciencia de Datos</a>
                     <a href="javascript:void(0);">2 -Alimentos</a>
                     <a href="javascript:void(0);">3 - Servicio</a>
                     <a href="javascript:void(0);">4 - Desarrollo</a>
-                    <a href="javascript:void(0);">5 - Liderazgo</a>
+                    <a href="javascript:void(0);">5 - Liderazgo</a> -->
                 </div>
             </li>
             <li class="topbar-link">Comunidad educativa</li>

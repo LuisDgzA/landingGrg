@@ -11,17 +11,19 @@ document.addEventListener('DOMContentLoaded',() => {
 
     const Dropdowns = document.querySelectorAll('.dropdown')
 
+    const FixedTopbar = document.querySelector('.fixed-topbar')
+
 
     
 
     document.addEventListener('click', (e) => {
 
         const isClickInsideDropdown = e.target.closest('.submenu-dropdown');
-        console.log("🚀 ~ isClickInsideDropdown:", isClickInsideDropdown)
+        // console.log("🚀 ~ isClickInsideDropdown:", isClickInsideDropdown)
         const isClickInsideSidebar = e.target.closest('.navbar-content');
-        console.log("🚀 ~ isClickInsideSidebar:", isClickInsideSidebar)
+        // console.log("🚀 ~ isClickInsideSidebar:", isClickInsideSidebar)
         const isClickOnToggle = e.target.closest('#btnNavBarResponsive');
-        console.log("🚀 ~ isClickOnToggle:", isClickOnToggle)
+        // console.log("🚀 ~ isClickOnToggle:", isClickOnToggle)
         // 3. if the click target isn’t inside *any* dropdown…
         if (isClickInsideDropdown) {
             // …handle your “outside” click here
@@ -34,15 +36,20 @@ document.addEventListener('DOMContentLoaded',() => {
         if (!navbarContent.classList.contains('hidden') && !isClickInsideSidebar && !isClickOnToggle) {
             navBarResponsive.classList.add('hidden')
         }
+        if(!isClickInsideDropdown && !isClickInsideDropdown){
+            Dropdowns.forEach(dd => {
+                dd.classList.add('hidden')
+            })
+        }
     });
 
     btnNavBarResponsive.addEventListener('click', () => {
-        console.log('clicknab')
+        // console.log('clicknab')
         navBarResponsive.classList.toggle('hidden')
     })
 
     btnCloseNavBar.addEventListener('click', () => {
-        console.log('clicknab')
+        // console.log('clicknab')
         navBarResponsive.classList.add('hidden')
     })
 
@@ -51,13 +58,23 @@ document.addEventListener('DOMContentLoaded',() => {
     DropdownsMenus.forEach(dropdown => {
         dropdown.addEventListener('click', () => {
             console.log('drop')
-            // Dropdowns.forEach(dd => {
-            //     dd.classList.add('hidden')
-            // })
+            Dropdowns.forEach(dd => {
+                dd.classList.add('hidden')
+            })
             const DropdownItem = dropdown.querySelector('.dropdown')
             console.log("🚀 ~ DropdownItem:", DropdownItem)
             DropdownItem?.classList.toggle('hidden')
         })
+    })
+
+    document.addEventListener('scroll', () => {
+        console.log('scroll')
+        if(window.scrollY > 100){
+            console.log('pase el 50')
+            FixedTopbar.classList.add('bg-cafe')
+        }else{
+            FixedTopbar.classList.remove('bg-cafe')
+        }
     })
     
 })
