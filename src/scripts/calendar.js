@@ -224,12 +224,12 @@ function createCalendar(calendar, element, adjuster){
       var number = DayNumber(i+1);
       // Check Date against Event Dates
       for(var n = 0; n < calendar.Model.length; n++){
-        var evDate = calendar.Model[n].Date;
+        var evDate = new Date(calendar.Model[n].Date);
         var toDate = new Date(calendar.Selected.Year, calendar.Selected.Month, (i+1));
-        if(evDate.getTime() == toDate.getTime()){
+        if(evDate.toDateString() === toDate.toDateString()){
           number.className += " eventday";
 		  // console.log("model",calendar.Model[n])
-		  number.setAttribute("data-src",calendar.Model[n].img )
+		  number.setAttribute("data-date",calendar.Model[n].Date )
 		  number.setAttribute("data-index",n )
 
         //   var title = document.createElement('span');

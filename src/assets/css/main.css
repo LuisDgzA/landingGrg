@@ -138,3 +138,21 @@ body{
 }
 
 .anchor-target { scroll-margin-top: 190px; }
+
+.pregunta_respuesta{
+    display: none;
+}
+
+.pregunta_respuesta.active{
+    display: block;
+}
+
+.pregunta.active{
+    .pregunta_icon{
+        transform: rotate(180deg);
+    }
+}
+
+#miniCarousel{
+    opacity: 0;
+}

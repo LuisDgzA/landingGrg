@@ -1,0 +1,49 @@
+---
+import ArroiwCircleDown from "@/assets/icons/Arrow_Circle_Down.svg"
+import {preguntasFrecuentes} from '@/data/preguntasFrecuentes.js'
+---
+
+<div class="container mx-auto space-y-10 mt-16">
+    <h2 class="text-64 text-cafe text-center">Preguntas frecuentes</h2>
+    <p class="text-20 text-grayGRG text-center">Consulta los temas más comunes sobre inscripción, trámites, programas académicos y más.</p>
+
+    <div class="w-full flex flex-col gap-6">
+       
+            {
+                preguntasFrecuentes.map(pregunta => (
+                    <div class="pregunta cursor-pointer">
+                        <div class="flex rounded-3xl overflow-hidden pregunta_title">
+                            <div class="bg-grayExtra w-9/10 py-4 px-8">
+                                <p class="text-20">{pregunta.description}</p>
+                            </div>
+                            <div class="bg-redGRG w-1/10 grid place-content-center">
+                                <ArroiwCircleDown class="pregunta_icon transition-all duration-150"/>
+                            </div>
+                        </div>
+                        <di class="pregunta_respuesta">
+                            {pregunta.response}
+                        </div>
+                    </div>
+                ))
+            }
+
+           
+        </div>
+    </div>
+</div>
+
+
+<script>
+    const preguntasTitle = document.querySelectorAll('.pregunta_title')
+    preguntasTitle.forEach(pregunta => {
+        pregunta.addEventListener('click', () => {
+            console.log('cliak')
+            const parent = pregunta.parentElement
+            parent?.classList.toggle('active')
+            const pregunta_response = pregunta.nextElementSibling
+            pregunta_response?.classList.toggle('active')
+
+        })
+    })
+        
+</script>

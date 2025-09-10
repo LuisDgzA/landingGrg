@@ -13,23 +13,28 @@
 
             {
                 "title": "Diplomado en Inteligencia Artificial Aplicada al Negocio Restaurantero",
-                "description": "Formar a los colaboradores en el uso estratégico de datos, inteligencia artificial y herramientas digitales para resolver retos del negocio, mejorar procesos y fortalecer la experiencia del cliente"
+                "description": "Formar a los colaboradores en el uso estratégico de datos, inteligencia artificial y herramientas digitales para resolver retos del negocio, mejorar procesos y fortalecer la experiencia del cliente",
+                "route": "tecnologia"
             },
             {
                 "title": "Diplomado en Inteligencia Artificial Aplicada al Negocio Restaurantero",
-                "description": "Formar a los colaboradores en el uso estratégico de datos, inteligencia artificial y herramientas digitales para resolver retos del negocio, mejorar procesos y fortalecer la experiencia del cliente"
+                "description": "Formar a los colaboradores en el uso estratégico de datos, inteligencia artificial y herramientas digitales para resolver retos del negocio, mejorar procesos y fortalecer la experiencia del cliente",
+                "route": "tecnologia"
             },
             {
                 "title": "Diplomado en Inteligencia Artificial Aplicada al Negocio Restaurantero",
-                "description": "Formar a los colaboradores en el uso estratégico de datos, inteligencia artificial y herramientas digitales para resolver retos del negocio, mejorar procesos y fortalecer la experiencia del cliente"
+                "description": "Formar a los colaboradores en el uso estratégico de datos, inteligencia artificial y herramientas digitales para resolver retos del negocio, mejorar procesos y fortalecer la experiencia del cliente",
+                "route": "tecnologia"
             },
             {
                 "title": "Diplomado en Inteligencia Artificial Aplicada al Negocio Restaurantero",
-                "description": "Formar a los colaboradores en el uso estratégico de datos, inteligencia artificial y herramientas digitales para resolver retos del negocio, mejorar procesos y fortalecer la experiencia del cliente"
+                "description": "Formar a los colaboradores en el uso estratégico de datos, inteligencia artificial y herramientas digitales para resolver retos del negocio, mejorar procesos y fortalecer la experiencia del cliente",
+                "route": "tecnologia"
             },
             {
                 "title": "Diplomado en Inteligencia Artificial Aplicada al Negocio Restaurantero",
-                "description": "Formar a los colaboradores en el uso estratégico de datos, inteligencia artificial y herramientas digitales para resolver retos del negocio, mejorar procesos y fortalecer la experiencia del cliente"
+                "description": "Formar a los colaboradores en el uso estratégico de datos, inteligencia artificial y herramientas digitales para resolver retos del negocio, mejorar procesos y fortalecer la experiencia del cliente",
+                "route": "tecnologia"
             }
         ]
     },
@@ -47,19 +52,23 @@
 
             {
                 "title": "Certificación en Calidad e Innovación Gastronómica con Tecnología",
-                "description": "Desarrollar competencias en chefs y equipos para garantizar estándares internacionales en insumos, procesos y servicio, apoyados en..."
+                "description": "Desarrollar competencias en chefs y equipos para garantizar estándares internacionales en insumos, procesos y servicio, apoyados en...",
+                "route": "innovacion_gastronomica"
             },
             {
                 "title": "Certificación en Calidad e Innovación Gastronómica con Tecnología",
-                "description": "Desarrollar competencias en chefs y equipos para garantizar estándares internacionales en insumos, procesos y servicio, apoyados en..."
+                "description": "Desarrollar competencias en chefs y equipos para garantizar estándares internacionales en insumos, procesos y servicio, apoyados en...",
+                "route": "innovacion_gastronomica"
             },
             {
                 "title": "Certificación en Calidad e Innovación Gastronómica con Tecnología",
-                "description": "Desarrollar competencias en chefs y equipos para garantizar estándares internacionales en insumos, procesos y servicio, apoyados en..."
+                "description": "Desarrollar competencias en chefs y equipos para garantizar estándares internacionales en insumos, procesos y servicio, apoyados en...",
+                "route": "innovacion_gastronomica"
             },
             {
                 "title": "Certificación en Calidad e Innovación Gastronómica con Tecnología",
-                "description": "Desarrollar competencias en chefs y equipos para garantizar estándares internacionales en insumos, procesos y servicio, apoyados en..."
+                "description": "Desarrollar competencias en chefs y equipos para garantizar estándares internacionales en insumos, procesos y servicio, apoyados en...",
+                "route": "innovacion_gastronomica"
             }
         ]
     },
@@ -77,19 +86,23 @@
 
             {
                 "title": "Diplomado en Calidad de Atención y Experiencias Memorables",
-                "description": "Profesionalizar al personal en estándares internacionales de servicio, atención personalizada y modelos de hospitalidad apoyados en tecnología."
+                "description": "Profesionalizar al personal en estándares internacionales de servicio, atención personalizada y modelos de hospitalidad apoyados en tecnología.",
+                "route": "calidad_atencion"
             },
             {
                 "title": "Diplomado en Calidad de Atención y Experiencias Memorables",
-                "description": "Profesionalizar al personal en estándares internacionales de servicio, atención personalizada y modelos de hospitalidad apoyados en tecnología."
+                "description": "Profesionalizar al personal en estándares internacionales de servicio, atención personalizada y modelos de hospitalidad apoyados en tecnología.",
+                "route": "calidad_atencion"
             },
             {
                 "title": "Diplomado en Calidad de Atención y Experiencias Memorables",
-                "description": "Profesionalizar al personal en estándares internacionales de servicio, atención personalizada y modelos de hospitalidad apoyados en tecnología."
+                "description": "Profesionalizar al personal en estándares internacionales de servicio, atención personalizada y modelos de hospitalidad apoyados en tecnología.",
+                "route": "calidad_atencion"
             },
             {
                 "title": "Diplomado en Calidad de Atención y Experiencias Memorables",
-                "description": "Profesionalizar al personal en estándares internacionales de servicio, atención personalizada y modelos de hospitalidad apoyados en tecnología."
+                "description": "Profesionalizar al personal en estándares internacionales de servicio, atención personalizada y modelos de hospitalidad apoyados en tecnología.",
+                "route": "calidad_atencion"
             }
         ]
     },
@@ -107,19 +120,23 @@
 
             {
                 "title": "Certificación en Bienestar Integral y Productividad Laboral",
-                "description": "Potenciar el bienestar físico, emocional y profesional de los colaboradores, generando un equilibrio entre productividad y salud integral."
+                "description": "Potenciar el bienestar físico, emocional y profesional de los colaboradores, generando un equilibrio entre productividad y salud integral.",
+                "route": "bienestar_integral"
             },
             {
                 "title": "Certificación en Bienestar Integral y Productividad Laboral",
-                "description": "Potenciar el bienestar físico, emocional y profesional de los colaboradores, generando un equilibrio entre productividad y salud integral."
+                "description": "Potenciar el bienestar físico, emocional y profesional de los colaboradores, generando un equilibrio entre productividad y salud integral.",
+                "route": "bienestar_integral"
             },
             {
                 "title": "Certificación en Bienestar Integral y Productividad Laboral",
-                "description": "Potenciar el bienestar físico, emocional y profesional de los colaboradores, generando un equilibrio entre productividad y salud integral."
+                "description": "Potenciar el bienestar físico, emocional y profesional de los colaboradores, generando un equilibrio entre productividad y salud integral.",
+                "route": "bienestar_integral"
             },
             {
                 "title": "Certificación en Bienestar Integral y Productividad Laboral",
-                "description": "Potenciar el bienestar físico, emocional y profesional de los colaboradores, generando un equilibrio entre productividad y salud integral."
+                "description": "Potenciar el bienestar físico, emocional y profesional de los colaboradores, generando un equilibrio entre productividad y salud integral.",
+                "route": "bienestar_integral"
             }
         ]
     },
@@ -137,19 +154,23 @@
 
             {
                 "title": "Maestría en Liderazgo Estratégico e Innovación Empresarial",
-                "description": "Formar a líderes capaces de dirigir con visión estratégica, innovación tecnológica y enfoque en el cliente, alineados al crecimiento global ..."
+                "description": "Formar a líderes capaces de dirigir con visión estratégica, innovación tecnológica y enfoque en el cliente, alineados al crecimiento global ...",
+                "route": "liderazgo_estrategico"
             },
             {
                 "title": "Maestría en Liderazgo Estratégico e Innovación Empresarial",
-                "description": "Formar a líderes capaces de dirigir con visión estratégica, innovación tecnológica y enfoque en el cliente, alineados al crecimiento global ..."
+                "description": "Formar a líderes capaces de dirigir con visión estratégica, innovación tecnológica y enfoque en el cliente, alineados al crecimiento global ...",
+                "route": "liderazgo_estrategico"
             },
             {
                 "title": "Maestría en Liderazgo Estratégico e Innovación Empresarial",
-                "description": "Formar a líderes capaces de dirigir con visión estratégica, innovación tecnológica y enfoque en el cliente, alineados al crecimiento global ..."
+                "description": "Formar a líderes capaces de dirigir con visión estratégica, innovación tecnológica y enfoque en el cliente, alineados al crecimiento global ...",
+                "route": "liderazgo_estrategico"
             },
             {
                 "title": "Maestría en Liderazgo Estratégico e Innovación Empresarial",
-                "description": "Formar a líderes capaces de dirigir con visión estratégica, innovación tecnológica y enfoque en el cliente, alineados al crecimiento global ..."
+                "description": "Formar a líderes capaces de dirigir con visión estratégica, innovación tecnológica y enfoque en el cliente, alineados al crecimiento global ...",
+                "route": "liderazgo_estrategico"
             }
         ]
     }

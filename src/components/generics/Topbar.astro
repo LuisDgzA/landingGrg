@@ -23,7 +23,7 @@ const escuelas = await getCollection('escuelas')
                     <a href="./comunidadEscolar">Boletín Educativo</a>
                     <a href="./comunidadEscolar">Bolsa de Trabajo</a>
                     <a href="./comunidadEscolar">Nuestros Docentes</a>
-                    <a href="./comunidadEscolar">Calendario Académico</a>
+                    <a href="./comunidadEscolar#calendarioCE">Calendario Académico</a>
                     <a href="./comunidadEscolar">Becas y Otros Beneficios</a>
                 </div>
             </li>
@@ -32,7 +32,7 @@ const escuelas = await getCollection('escuelas')
                 <div class="bg-gray-300 flex flex-col text-black absolute -left-[1rem] top-[4rem] w-[25rem] max-w-[25rem] p-8 space-y-4 hidden dropdown z-100">
                     {
                         escuelas.map(({data:escuela},index) => (
-                            <a href={`escuelas#${escuela.idHTML}`}>{`${index+1} - `}{escuela.title}</a>
+                            <a href={`/escuelas#${escuela.idHTML}`}>{`${index+1} - `}{escuela.title}</a>
                         ))
                     }
                     <!-- <a href="javascript:void(0);">1 - De Tecnología y Ciencia de Datos</a>
@@ -42,7 +42,9 @@ const escuelas = await getCollection('escuelas')
                     <a href="javascript:void(0);">5 - Liderazgo</a> -->
                 </div>
             </li>
-            <li class="topbar-link">Comunidad educativa</li>
+            <li class="topbar-link">
+                <a href="/aspirantes">Aspirantes</a>   
+            </li>
             <li class="topbar-link">Contacto</li>
         </ul>
     </nav>

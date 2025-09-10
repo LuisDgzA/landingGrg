@@ -16,7 +16,7 @@ const escuelas = defineCollection({
             heroDescription: z.string(),
             heroImgSrc: image(),
             programas: z.array(
-                z.object({ title: z.string(), description: z.string() })
+                z.object({ title: z.string(), description: z.string(), route: z.string() })
             ),
         }),
 });
