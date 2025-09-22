@@ -2,7 +2,7 @@
     {
         "id": 1,
         "escuela": 1,
-        "route": "tecnologia",
+        "route": "ia",
         "heroImgSrc": "../assets/images/diplomado_int_art.png",
         "imgSrc": "../assets/images/programas/escudo_dip_int_art.png",
         "title": "Diplomado en Inteligencia Artificial Aplicada al Negocio Restaurantero",
@@ -12,7 +12,9 @@
         "inscripcion": "Septiembre, 2025",
         "duracion": "6 meses",
         "materias": "5 modulos temáticos",
-        "modalidad": "100% virtual con proyectos aplicados"        
+        "modalidad": "100% virtual con proyectos aplicados",
+        "descargableFicha": "https://academiaglobal.mx/resources/assets/files/grg/Ficha_Tecnica_Diplomado_IA_Negocio.pdf",
+        "descargablePlan": "https://academiaglobal.mx/resources/assets/files/grg/Plan_Estudio_Diplomado_IA_Negocio.pdf"    
     },
     {
         "id": 2,
@@ -27,7 +29,9 @@
         "inscripcion": "Octubre, 2025",
         "duracion": "4 meses",
         "materias": "5 modulos temáticos",
-        "modalidad": "Híbrida (virtual + prácticas en cocina)"        
+        "modalidad": "Híbrida (virtual + prácticas en cocina)",
+        "descargableFicha": "https://academiaglobal.mx/resources/assets/files/grg/Ficha_Tecnica_Certificacion_Calidad_Innovacion_Gastronomica.pdf",
+        "descargablePlan": "https://academiaglobal.mx/resources/assets/files/grg/Plan_Estudio_Certificacion_Calidad_Innovacion_Gastronomica.pdf"        
     },
     {
         "id": 3,
@@ -42,7 +46,9 @@
         "inscripcion": "Noviembre, 2026",
         "duracion": "5 meses",
         "materias": "5 modulos temáticos",
-        "modalidad": "100% virtual con simuladores y casos prácticos"        
+        "modalidad": "100% virtual con simuladores y casos prácticos",
+        "descargableFicha": "https://academiaglobal.mx/resources/assets/files/grg/Ficha_Tecnica_Diplomado_Calidad_Experiencias.pdf",
+        "descargablePlan": "https://academiaglobal.mx/resources/assets/files/grg/Plan_Estudio_Diplomado_Calidad_Experiencias.pdf"        
     },
     {
         "id": 4,
@@ -57,7 +63,9 @@
         "inscripcion": "Septiembre, 2025",
         "duracion": "6 meses",
         "materias": "5 modulos temáticos",
-        "modalidad": "100% virtual con proyectos aplicados"        
+        "modalidad": "100% virtual con proyectos aplicados",
+        "descargableFicha": "https://academiaglobal.mx/resources/assets/files/grg/Ficha_Tecnica_Certificacion_Bienestar_Integral.pdf",
+        "descargablePlan": "https://academiaglobal.mx/resources/assets/files/grg/Plan_Estudio_Certificacion_Bienestar_Integral.pdf"        
     },
     {
         "id": 5,
@@ -72,6 +80,8 @@
         "inscripcion": "Septiembre, 2025",
         "duracion": "2 años",
         "materias": "6 módulos (incluye proyecto final)",
-        "modalidad": "Virtual con seminarios ejecutivos en línea"        
+        "modalidad": "Virtual con seminarios ejecutivos en línea",
+        "descargableFicha": "https://academiaglobal.mx/resources/assets/files/grg/Ficha_Tecnica_Maestria_Liderazgo_Estrategico.pdf",
+        "descargablePlan": "https://academiaglobal.mx/resources/assets/files/grg/Plan_Estudio_Maestria_Liderazgo_Estrategico.pdf"        
     }
 ]

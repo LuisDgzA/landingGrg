@@ -1,0 +1,46 @@
+---
+import "../assets/css/main.css"
+import '../assets/css/calendario.css'
+
+
+import Layout from '../layouts/Layout.astro';
+import SectionCarousel from '../components/SectionCarousel.astro';
+import Footer from "../components/generics/Footer.astro";
+import FechasCE from "../components/comunidadEscolar/FechasCE.astro";
+import SesionesInformativas from "../components/aspirantes/SesionesInformativas.astro";
+import ProcesoAdmision from "../components/escuelas/ProcesoAdmision.astro";
+import IniciaProceso from "../components/aspirantes/IniciaProceso.astro";
+import ConoceCampus from "../components/comunidadEscolar/ConoceCampus.astro";
+import PreguntasFrecuentes from "../components/aspirantes/PreguntasFrecuentes.astro";
+import HeroFullHeight from "../components/generics/HeroFullHeight.astro";
+import PlayCircle from "../assets/icons/Play-circle.svg"
+
+import {personas} from "../data/personas.js"
+import ModalOfertaEducativa from "../components/modales/ModalOfertaEducativa.astro";
+import ModalQuienesSomos from "../components/modales/ModalQuienesSomos.astro";
+
+
+
+
+---
+<Layout>
+    <HeroFullHeight
+      title="Aspirantes"
+      description="Da el primer paso hacia tu futuro profesional. Conoce las fechas de registro e inscripción, el proceso de admisión y realiza tu pre-registro en línea de forma sencilla y rápida. Resuelve tus dudas con nuestras preguntas frecuentes y comienza hoy tu camino para formar parte de nuestra comunidad escolar."
+      imgBackground="../images/hero_aspirantes.jpg">
+      <button class="call-to-actions-general xl:text-xl flex items-center gap-4 uppercase" aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-basic-modal" data-hs-overlay="#hs-basic-modal">oferta educativa <PlayCircle/></button>
+    </HeroFullHeight>
+    <SesionesInformativas/>
+	<ProcesoAdmision/>
+    <FechasCE/>
+    <IniciaProceso/>
+    <ConoceCampus/>
+    <PreguntasFrecuentes/>
+    <SectionCarousel titleCarousel="Historias de éxito" items={personas}/>
+    <Footer/>
+    <ModalOfertaEducativa/>
+    <ModalQuienesSomos/>
+
+  </Layout>
+
+

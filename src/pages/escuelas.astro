@@ -1,19 +1,31 @@
 ---
-import "@/assets/css/main.css"
+import "../assets/css/main.css"
 
-import HeroEscuela from "@/components/escuela/HeroEscuela.astro";
-import Footer from "@/components/generics/Footer.astro";
-import Layout from "@/layouts/Layout.astro";
+import HeroEscuela from "../components/escuela/HeroEscuela.astro";
+import Footer from "../components/generics/Footer.astro";
+import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 const escuelas = await getCollection('escuelas')
-import FlechaRojaDerecha from '@/assets/icons/flechaRojaDerecha.svg'
-import FlechaRojaIzquierda from '@/assets/icons/flechaRojaIzquierda.svg'
+import FlechaRojaDerecha from '../assets/icons/flechaRojaDerecha.svg'
+import FlechaRojaIzquierda from '../assets/icons/flechaRojaIzquierda.svg'
+import HeroFullHeight from "../components/generics/HeroFullHeight.astro";
+import PlayCircle from "../assets/icons/Play-circle.svg"
+import ModalOfertaEducativa from "../components/modales/ModalOfertaEducativa.astro";
+
 ---
 
 
 <Layout>
-    <HeroEscuela/>
+    <!-- <HeroEscuela/> -->
+     <HeroFullHeight
+      title="Nuestras Escuelas"
+      description="Conoce nuestras escuelas y descubre la variedad de programas académicos que ofrece cada una. Explora las áreas de estudio, sus planes de formación y las oportunidades que brindan para tu desarrollo profesional. Accede directamente a la información detallada de cada programa y elige el que mejor se adapte a tus objetivos."
+      imgBackground="../images/heroEscuela.jpg">
+
+      <button class="call-to-actions-general xl:text-xl flex items-center gap-4" aria-haspopup="dialog" aria-expanded="false" aria-controls="modalVideoOfertaEducativa" data-hs-overlay="#modalVideoOfertaEducativa">Nuestra Oferta Educativa <PlayCircle/></button>
+
+    </HeroFullHeight>
     <div class="container mx-auto my-[8rem] space-y-[8rem]">
         {
             escuelas.map(escuela => (
@@ -35,9 +47,9 @@ import FlechaRojaIzquierda from '@/assets/icons/flechaRojaIzquierda.svg'
                                         escuela.data.programas.map(programa => (
                                             <li class="splide__slide">
                                                 <div class="bg-grayExtra p-4 space-y-4 h-full">
-                                                    <p>{programa.title}</p>
-                                                    <p>{programa.description}</p>
-                                                    <a href="" target="_blank" rel="noopener noreferrer" class="text-redGRG font-semibold border-b border-b-redGRG ">¡Conoce más aquí!</a>
+                                                    <p class="text-20">{programa.title}</p>
+                                                    <p class="text-20">{programa.description}</p>
+                                                    <a href={`/programas/${programa.route}`}  rel="noopener noreferrer" class="text-redGRG font-semibold border-b border-b-redGRG ">¡Conoce más aquí!</a>
                                                 </div>
                                             </li>
                                         ))
@@ -56,6 +68,8 @@ import FlechaRojaIzquierda from '@/assets/icons/flechaRojaIzquierda.svg'
     </div>
 
     <Footer/>
+    <ModalOfertaEducativa/>
+
     
 </Layout>
 
@@ -92,28 +106,5 @@ import FlechaRojaIzquierda from '@/assets/icons/flechaRojaIzquierda.svg'
             carousel.go('+1')
         })
     })
-    // for ( var i = 0; i < elms.length; i++ ) {
-    //     new Splide( elms[ i ],{
-    //         perPage: 2,
-    //         gap: "5rem",
-    //         perMove: 1,
-    //         arrows: false,
-    //         breakpoints: {
-    //             769: {
-    //                 perPage: 1,
-    //             },
-                
-    //         }
-    //     } ).mount();
-    // }
-
-    // const btnsGoLeft = document.querySelectorAll('.btnGoLeft')
-    // const btnsGoRight = document.querySelectorAll('.btnGoRight')
-
-    // btnsGoLeft.forEach(btn => {
-    //     btn.addEventListener('click', () => {
-    //         console.log('clickleft')
-    //     })
-    // })
 
 </script>

@@ -1,14 +1,16 @@
 ---
-import { pasosInscripcion  } from "../../data/pasosInscripcion"
+import { pasosInscripcion  } from "../../data/pasosInscripcion.js"
+
+
 ---
 
 
 <div class="container mx-auto flex justify-between my-16 gap-10">
     <div class="space-y-8 w-1/2">
-        <p class="text-xl text-redGRG font-semibold">Proceso de Admisión</p>
-        <p class="font-semibold text-5xl">Proceso de <br> Inscripción digital</p>
+        <p class="text-20 text-redGRG font-semibold">Proceso de Admisión</p>
+        <p class="font-semibold text-50">Proceso de <br> Inscripción digital</p>
         <!-- <p class="font-semibold text-5xl">Inscripción digital</p> -->
-        <p class="text-xl">Conoce los pasos necesarios para completar tu proceso de inscripción de forma correcta y oportuna.</p>
+        <p class="text-20">Conoce los pasos necesarios para completar tu proceso de inscripción de forma correcta y oportuna.</p>
     </div>
     <div class="w-1/2">
         <div class="splide" id="splideProcesoAdmision" role="group" aria-label="Splide Basic HTML Example">
@@ -25,8 +27,8 @@ import { pasosInscripcion  } from "../../data/pasosInscripcion"
                                         class="lg:w-1/2 h-full object-cover object-left-top"
                                     />
                                     <div class="lg:w-1/2 p-6 flex flex-col justify-center text-left">
-                                        <h3 class="text-lg font-semibold text-red-700">{item.title}</h3>
-                                        <p class="text-gray-700 text-sm mt-2 overflow-hidden font-20 font-semibold">{item.description}</p>
+                                        <h3 class="text-20 font-semibold text-red-700">{item.title}</h3>
+                                        <p class="text-gray-700 text-sm mt-2 overflow-hidden text-20 font-semibold">{item.description}</p>
                                     </div>
                                 </div>
                             </li>
@@ -39,16 +41,21 @@ import { pasosInscripcion  } from "../../data/pasosInscripcion"
 </div>
 
 <script>
+   
     import "@splidejs/splide"
     import '@splidejs/splide/css';
-
     import Splide from "@splidejs/splide";
     var elms = document.getElementsByClassName( 'splide' );
 
-    for ( var i = 0; i < elms.length; i++ ) {
-        new Splide( elms[ i ],{
-            perPage: 1,
-            perMove: 1,
-        } ).mount();
-    }
+     for ( var i = 0; i < elms.length; i++ ) {
+         new Splide( elms[ i ],{
+             perPage: 1,
+             perMove: 1,
+         } ).mount();
+     }
+//      document.addEventListener('astro:page-load', () => {
+//     document.querySelectorAll('.splide').forEach((el) => {
+//       new Splide(el, { perPage: 1, perMove: 1 }).mount();
+//     });
+//   });
 </script>

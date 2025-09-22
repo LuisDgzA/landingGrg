@@ -37,7 +37,7 @@ body{
     background-position: left;
 }
 .topbar-link{
-    @apply border-1 border-transparent p-3 hover:border-b-redGRG xl:text-lg relative cursor-pointer;
+    @apply border-1 border-transparent p-3 hover:border-b-redGRG xl:text-[1.35rem] relative cursor-pointer;
 }
 .claseNormal{
     @apply text-red-500;
@@ -72,11 +72,11 @@ body{
 }
 
 .accordion-ejes{
-    @apply w-full flex justify-between items-center bg-gray-100 text-left font-semibold text-gray-800;
+    @apply w-full flex justify-between items-center bg-gray-100 text-left font-semibold text-gray-800 ;
 }
 
 .readmore-ejes{
-    @apply text-white  bg-redGRG py-7  px-4 lg:px-10 text-xl  md:w-fit flex items-center gap-4;
+    @apply text-white  bg-redGRG py-7  px-4 lg:px-10 text-xl  md:w-fit flex items-center gap-4 cursor-pointer;
 }
 
 .egresado-number{
@@ -138,3 +138,67 @@ body{
 }
 
 .anchor-target { scroll-margin-top: 190px; }
+
+.pregunta_respuesta{
+    display: none;
+}
+
+.pregunta_respuesta.active{
+    display: block;
+}
+
+.pregunta.active{
+    .pregunta_icon{
+        transform: rotate(180deg);
+    }
+}
+
+#miniCarousel{
+    opacity: 0;
+}
+
+.checkCalendar{
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.eventday.graduacion{
+    @apply !bg-yellow-400;
+}
+
+.eventday.inscripcion{
+    @apply !bg-redGRG;
+}
+
+.eventday.evento{
+    @apply !bg-lightGrayGRG;
+}
+
+.pregunta_title{
+    border-radius: 1rem;
+    
+}
+
+.active .pregunta_title{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.pregunta_respuesta{
+    @apply bg-grayExtra py-4 px-8;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem
+}
+
+.pregunta_icon{
+    @apply bg-redGRG;
+    /* transition: display 0.3s ease-in-out; */
+}
+
+.active .pregunta_icon{
+    @apply bg-grayExtra;
+}
+
+.active .pregunta_icon svg path{
+    stroke: var(--color-redGRG);
+}

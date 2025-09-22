@@ -1,4 +1,9 @@
 ---
+import YoutubeIcon from '../../assets/icons/redes/youtube.svg'
+import FacebookIcon from '../../assets/icons/redes/facebook.svg'
+import XIcon from '../../assets/icons/redes/twitter.svg'
+import InstagramIcon from '../../assets/icons/redes/instagram.svg'
+import LinkedinIcon from '../../assets/icons/redes/linkedin.svg'
 
 ---
 
@@ -7,7 +12,7 @@
 <footer class="w-full bg-redGRG text-white py-16">
     <div class="container mx-auto">
         <div class="flex flex-col gap-4 lg:flex-row justify-around items-center mb-6">
-            <img src="/images/logo_blanco.png" alt="logo_grg">
+            <img src="./images/logo_blanco.png" alt="logo_grg">
             <h2 class="uppercase font-bold text-3xl lg:text-[5rem] xl:text-[7rem]">universidad grg</h2>
         </div>
         <hr>
@@ -21,15 +26,6 @@
                     </ul>
                 </div>
                 <div class="space-y-6">
-                    <p class="uppercase font-semibold">enlaces útiles</p>
-                    <ul class="flex flex-col gap-2">
-                        <li>Oferta educativa</li>
-                        <li>Comunidad académica</li>
-                        <li>Conóccenos</li>
-                        <li>Calendario académico</li>
-                    </ul>
-                </div>
-                <div class="space-y-6">
                     <p class="uppercase font-semibold">nuestras marcas</p>
                     <ul class="flex flex-col gap-2">
                         <li>Toks</li>
@@ -39,16 +35,27 @@
                         <li>Shake Shack</li>
                     </ul>
                 </div>
+                <div class="space-y-6">
+                    <p class="uppercase font-semibold">enlaces útiles</p>
+                    <ul class="flex flex-col gap-2">
+                        <li><a href="/licenciaturas/grg/escuelas" rel="noopener noreferrer">Oferta educativa</a></li>
+                        <li><a href="/licenciaturas/grg/comunidadEscolar" rel="noopener noreferrer">Comunidad académica</a></li>
+                        <li><a href="/licenciaturas/grg/" rel="noopener noreferrer">Conócenos</a></li>
+                        <li><a href="/licenciaturas/grg/comunidadEscolar#calendarioCE" rel="noopener noreferrer">Calendario académico</a></li>
+                    </ul>
+                </div>
+                
             </div>
             <div class="grid place-content-center space-y-6 xl:w-1/4 xl:place-content-start xl:my-8">
                 <p class="uppercase font-semibold text-center xl:text-start">nuestras redes</p>
                 <p class=" text-center xl:text-start">Siguenos en:</p>
-                <div class="flex gap-6">
-                    <span>1</span>
-                    <span>2</span>
-                    <span>3</span>
-                    <span>4</span>
-                    <span>5</span>
+                
+                <div class="flex gap-6 items-center">
+                    <span><a href="javascript:void(0)"  rel="noopener noreferrer"><YoutubeIcon/></a></span>
+                    <span><a href="javascript:void(0)"  rel="noopener noreferrer"><FacebookIcon/></a></span>
+                    <span><a href="javascript:void(0)"  rel="noopener noreferrer"><XIcon/></a></span>
+                    <span><a href="javascript:void(0)"  rel="noopener noreferrer"><InstagramIcon/></a></span>
+                    <span><a href="javascript:void(0)"  rel="noopener noreferrer"><LinkedinIcon/></a></span>
                 </div>
             </div>
         </div>
@@ -56,8 +63,8 @@
         <div class="space-y-6">
             <p class="text-center mt-6">© 2025 Universidad GRG. Todos los derechos reservados.</p>
             <div class="flex justify-around">
-                <a href="javascript:void(0);">Aviso de privacidad</a>
-                <a href="javascript:void(0);">Términos y condiciones</a>
+                <a href="https://academiaglobal.mx/resources/assets/documentosFalsos/ReglamentoEscolar.pdf" target="_blank">Aviso de privacidad</a>
+                <a href="https://academiaglobal.mx/resources/assets/documentosFalsos/ReglamentoEscolar.pdf">Términos y condiciones</a>
             </div>
         </div>
     </div>

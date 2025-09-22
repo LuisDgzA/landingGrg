@@ -1,10 +1,15 @@
 ---
+
+const {parrafo} = Astro.props;
 ---
 <div class="container mx-auto mb-20">
     <div class="space-y-4 mb-10">
-        <h2 class="text-center text-2xl md-text-3xl xl:text-5xl text-redGRG font-bold">¡Impulsa tu carrera!</h2>
-        <h2 class="text-center text-2xl md-text-3xl xl:text-5xl text-lightGrayGRG font-bold">Contacta a un asesor</h2>
-        <p class="text-center">para recibir ayuda en tu proceso de inscripción</p>
+        <h2 class="text-center text-45 text-redGRG font-bold">¡Impulsa tu carrera!</h2>
+        <h2 class="text-center text-30 text-lightGrayGRG font-bold">Contacta a un asesor</h2>
+        {
+            parrafo && <p class="text-center text-20">para recibir ayuda en tu proceso de inscripción</p>
+        }
+        
     </div>
 
     <div class="w-3/4 mx-auto">
@@ -20,6 +25,19 @@
             <div class="relative">
                 <input type="tel" id="telefono" class="floating-input  peer min-h-[4rem]" placeholder=" " />
                 <label for="telefono" class="floating-label">Teléfono</label>
+            </div>
+            <div class="relative">
+                <label for="carrera" class="floating-label">Carrera de interes</label>
+                <select name="" id="carrera" class="floating-input  peer">
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="">Diplomado en Inteligencia Artificial Aplicada al Negocio Restaurantero</option>
+                    <option value="">Certificación en Calidad e Innovación Gastronómica con Tecnología</option>
+                    <option value="">Diplomado en Calidad de Atención y Experiencias Memorables</option>
+                    <option value="">Certificación en Bienestar Integral y Productividad Laboral</option>
+                    <option value="">Maestría en Liderazgo Estratégico e Innovación Empresarial</option>
+                </select>
+                <!-- <input type="text" id="carrera" class="floating-input  peer" placeholder=" " />
+                <label for="carrera" class="floating-label">Teléfono</label> -->
             </div>
             <div class="relative">
                 <textarea id="mensaje" class="floating-input  peer p-10" rows="10"></textarea>

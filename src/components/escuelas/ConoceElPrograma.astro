@@ -1,4 +1,6 @@
 ---
+import ModalPreRegistro from "../modales/ModalPreRegistro.astro";
+
 const {claveRvoe, claveEscuela, fechaInscripcion, description, imgConoce} = Astro.props;
 ---
 
@@ -13,8 +15,10 @@ const {claveRvoe, claveEscuela, fechaInscripcion, description, imgConoce} = Astr
         </div>
         <div class="w-full lg:w-2/5">
             <img class="w-full mb-6" src={imgConoce} alt="">
-            <button class="call-to-actions-general !w-[85%] block ml-auto uppercase">pre-registrate ahora</button>
+            <button class="call-to-actions-general !w-[85%] block ml-auto uppercase" aria-haspopup="dialog" aria-expanded="false" aria-controls="modalRegistrate" data-hs-overlay="#modalRegistrate">pre-registrate ahora</button>
             <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id at autem quisquam, accusamus sint nobis nihil quos voluptate eveniet ducimus!</p> -->
         </div>
     </div>
 </div>
+
+<ModalPreRegistro/>

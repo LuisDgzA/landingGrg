@@ -1,39 +1,42 @@
 ---
-import { personas as items } from "../../data/personas"
-import GRGAmarillo from '@/assets/icons/GRG_amarillo.svg'
-import FlechaRojaDerecha from '@/assets/icons/flechaRojaDerecha.svg'
-import FlechaRojaIzquierda from '@/assets/icons/flechaRojaIzquierda.svg'
+import { noticias as items } from "../../data/noticias.js"
+import GRGAmarillo from '../../assets/icons/GRG_amarillo.svg'
+import FlechaRojaDerecha from '../../assets/icons/flechaRojaDerecha.svg'
+import FlechaRojaIzquierda from '../../assets/icons/flechaRojaIzquierda.svg'
 
 
 ---
 
 <div class="container mx-auto">
-    <div class="flex flex-col lg:flex-row gap-8 mt-12">
-        <div class="w-full lg:w-2/5 bg-redGRG text-white rounded-2xl px-[3rem] py-[2rem] space-y-8">
-            <h3 class="text-45 font-semibold">Conferencia</h3>
-            <p class="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis quam eu dolor semper eleifend.</p>
-            <p class="text-2xl font-semibold border-b-1 border-white inline-block">!Registrate Ahora!</p>
+    <div class="flex flex-col lg:flex-row gap-2 mt-12">
+        <div class="w-full lg:w-[45%] bg-redGRG text-white rounded-2xl px-[2rem] py-[2rem] space-y-8">
+            <div>
+                <h3 class="text-45 font-semibold">Conferencia Magistral:</h3>
+                <p class="text-30">“Liderazgo en la Era Digital”</p>
+            </div>
+            <p class="text-20">Una charla inspiradora sobre cómo liderar proyectos y equipos en entornos digitales.</p>
+            <p class="text-23 font-semibold border-b-1 border-white inline-block">!Registrate Ahora!</p>
         </div>
-        <div class="w-full lg:w-3/5 bg-[url(/images/graduacionesCE.jpg)] bg-center bg-cover text-white rounded-2xl px-[3rem] py-[2rem] space-y-2 text-right flex flex-col justify-end">
+        <div class="w-full lg:w-[55%] bg-[url(/images/graduacionesCE.jpg)] bg-center bg-cover text-white rounded-2xl px-[2rem] py-[2rem] space-y-2 text-right flex flex-col justify-end">
             <div class="">
-                <h3 class="text-45 font-semibold">Graduaciones</h3>
-                <p class="text-xl">Participa en la ceremonia oficial de egreso y reconoce el esfuerzo que te llevó hasta aquí.</p>
-                <p class="text-2xl font-semibold border-b-1 border-white inline-block">Agregar a mi calendario!</p>
+                <h3 class="text-45 font-semibold">Ceremonia de Graduación Otoño 2025 – Universidad GRG</h3>
+                <p class="text-20">La Universidad GRG celebra los logros de sus egresados en una emotiva ceremonia virtual.</p>
+                <p class="text-23 font-semibold border-b-1 border-white inline-block">Agregar a mi calendario!</p>
             </div>
         </div>
     </div>
-    <div class="flex flex-col lg:flex-row gap-8 mt-8">        
-        <div class="w-full lg:w-3/5 bg-[url(/images/graduacionesCE2.jpg)] bg-center bg-cover text-white rounded-2xl px-[3rem] py-[2rem] space-y-2 text-right flex flex-col justify-end">
+    <div class="flex flex-col lg:flex-row gap-2 mt-8">        
+        <div class="w-full lg:w-[55%] bg-[url(/images/graduacionesCE2.jpg)] bg-center bg-cover text-white rounded-2xl px-[3rem] py-[2rem] space-y-2 text-right flex flex-col justify-end">
             <div class="">
-                <h3 class="text-45 font-semibold">Graduaciones</h3>
-                <p class="text-xl">Participa en la ceremonia oficial de egreso y reconoce el esfuerzo que te llevó hasta aquí.</p>
-                <p class="text-2xl font-semibold border-b-1 border-white inline-block">Agregar a mi calendario!</p>
+                <h3 class="text-45 font-semibold">Webinar: “Tu Futuro en la Universidad GRG”</h3>
+                <p class="text-20">Participa en la ceremonia oficial de egreso y reconoce el esfuerzo que te llevó hasta aquí.</p>
+                <p class="text-23 font-semibold border-b-1 border-white inline-block">Agregar a mi calendario!</p>
             </div>
         </div>
-        <div class="w-full lg:w-2/5 bg-redGRG text-white rounded-2xl px-[3rem] py-[2rem] space-y-8">
+        <div class="w-full lg:w-[45%] bg-redGRG text-white rounded-2xl px-[3rem] py-[2rem] space-y-8" id="noticiasCE">
             <h3 class="text-45 font-semibold">Noticias</h3>
-            <p class="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis quam eu dolor semper eleifend.</p>
-            <p class="text-2xl font-semibold border-b-1 border-white inline-block" id="triggerNoticias" aria-haspopup="dialog" aria-expanded="false" aria-controls="modalNoticias" data-hs-overlay="#modalNoticias">Ver Más Noticias</p>
+            <p class="text-20">Las últimas novedades, eventos y logros de la Universidad GRG. Mantente informado y conectado con nuestra comunidad académica.</p>
+            <p class="text-23 font-semibold border-b-1 border-white inline-block" id="triggerNoticias" aria-haspopup="dialog" aria-expanded="false" aria-controls="modalNoticias" data-hs-overlay="#modalNoticias">Ver Más Noticias</p>
         </div>
     </div>
 </div>
@@ -69,9 +72,9 @@ import FlechaRojaIzquierda from '@/assets/icons/flechaRojaIzquierda.svg'
                                         <div class="bg-grayExtra rounded-lg bg-gray-300 space-y-6 p-4">
                                             <img class="w-full h-[5rem] object-cover" src={item.image} alt="">
                                             <p class="text-redGRG">Noticias</p>
-                                            <p class="text-3xl font-semibold">Titulo</p>
-                                            <p class="text-xl font-semibold">Septiembre 12 / 2025</p>
-                                            <p class="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem magnam molestias corrupti tempora expedita distinctio necessitatibus ea, nemo nisi animi, modi minus beatae sequi. Esse.</p>
+                                            <p class="text-3xl font-semibold">{item.title}</p>
+                                            <p class="text-xl font-semibold">{item.date}</p>
+                                            <p class="text-xl">{item.description}</p>
                                         </div>
                                     </li>
                                 ))
@@ -95,36 +98,33 @@ import FlechaRojaIzquierda from '@/assets/icons/flechaRojaIzquierda.svg'
 
 
 <script>
+    
     import "@splidejs/splide"
     import '@splidejs/splide/css';
-
     import Splide from "@splidejs/splide";
 
-  let splideNoticias = new Splide("#splideNoticias", {
-    type: "loop",
-    // gap: "20vw",
-    arrows: false,
-    focus: "center",
-    // pagination: 'slider'
-  }).mount();
-    
-     let btnnoticiasLeft = document.getElementById('btnnoticiasLeft')
-    btnnoticiasLeft.addEventListener('click', e => {
-    splideNoticias.go('-1')
+    let splideNoticias = new Splide("#splideNoticias", {
+        type: "loop",
+        gap: "20vw",
+        arrows: false,
+        focus: "center",
+        pagination: 'slider'
+    }).mount();
+        
+        let btnnoticiasLeft = document.getElementById('btnnoticiasLeft')
+        btnnoticiasLeft.addEventListener('click', e => {
+        splideNoticias.go('-1')
 
-    
-  })
+        
+    })
 
-   let btnnoticiasRight = document.getElementById('btnnoticiasRight')
-    btnnoticiasRight.addEventListener('click', e => {
-    splideNoticias.go('+1')
+    let btnnoticiasRight = document.getElementById('btnnoticiasRight')
+        btnnoticiasRight.addEventListener('click', e => {
+        splideNoticias.go('+1')
 
-    
-  })
+        
+    })
 
 
 </script>
 
-<script is:inline>
-   
-</script>

@@ -1,55 +1,58 @@
 ---
-import SectionModeloEducativo from "./SectionModeloEducativo.astro";
 import Footer from "./generics/Footer.astro";
-import Hero from "./Hero.astro";
 import SectionConceptos from "./SectionConceptos.astro";
 import SectionCarousel from "./SectionCarousel.astro";
 import QuienesSomos from "./QuienesSomos.astro";
 import OfertaEducativa from "./OfertaEducativa.astro";
 import Principios from "./Principios.astro";
 import FormContacto from "./generics/FormContacto.astro";
-import FixedTopBar from "./generics/FixedTopBar.astro";
+import HeroFullHeight from "./generics/HeroFullHeight.astro";
+import PlayCircle from "../assets/icons/Play-circle.svg"
 
-const personas = [
-  {
-    name: "Nombre y Titulo de la persona Primero",
-    image: "https://academiaglobal.mx/resources/assets/img/test/56bbc6b86bb2611fbbd8c89b1a1c14bb5be9d380.jpg",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis arcu.",
-  },
-  {
-    name: "Nombre y Titulo de la persona",
-    image: "https://academiaglobal.mx/resources/assets/img/test/56bbc6b86bb2611fbbd8c89b1a1c14bb5be9d380.jpg",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis arcu.",
-  },
-  {
-    name: "Nombre y Titulo de la persona",
-    image: "https://academiaglobal.mx/resources/assets/img/test/56bbc6b86bb2611fbbd8c89b1a1c14bb5be9d380.jpg",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis arcu.",
-  },
-  {
-    name: "Nombre y Titulo de la persona",
-    image: "https://academiaglobal.mx/resources/assets/img/test/56bbc6b86bb2611fbbd8c89b1a1c14bb5be9d380.jpg",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis arcu.",
-  },
-  {
-    name: "Nombre y Titulo de la persona Ultimo",
-    image: "https://academiaglobal.mx/resources/assets/img/test/56bbc6b86bb2611fbbd8c89b1a1c14bb5be9d380.jpg",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis arcu.",
-  },
-];
+import {personasRecomiendan} from "../data/personasRecomiendan.js"
+import ModalQuienesSomos from "./modales/ModalQuienesSomos.astro";
 
 ---
 
 <div>
-    <Hero/>
+    <!-- <Hero/> -->
+    <HeroFullHeight
+      title="Desarrollamos el máximo potencial de nuestros colaboradores"
+      description="La misión de la Universidad GRG es ser el centro de generación de competencias de los colaboradores, así como el eje de innovación y soluciones para los continuos retos del Grupo."
+      imgBackground="./images/hero_home.jpg">
+      <button class="call-to-actions-general xl:text-xl flex items-center gap-4" aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-basic-modal" data-hs-overlay="#hs-basic-modal">¿Quiénes somos? <PlayCircle/></button>
+    </HeroFullHeight>
     <!-- <SectionModeloEducativo/> -->
     <QuienesSomos/>
     <SectionConceptos/>
     <Principios/>
     <OfertaEducativa/>
-    <FormContacto/>
-    {personas.length > 0 && <SectionCarousel titleCarousel="Quienes recomiendan" items={personas} />}
+    <FormContacto parrafo={true}/>
+    {personasRecomiendan.length > 0 && <SectionCarousel titleCarousel="Quienes recomiendan" items={personasRecomiendan} />}
     <Footer/>
+    <ModalQuienesSomos/>
     
 </div>
+
+
+<!-- <script>
+  document.addEventListener('close.hs.overlay', function (event) {
+    // Check if the closed modal is the one you are interested in
+    if (event.target.id === 'hs-basic-modal') {
+        const video = event.target?.querySelector('video')
+
+        if(video){
+          if(video.paused){
+            video.play()
+            return
+          }
+          video.pause()
+        }
+        // const video = event.target.querySelector()
+        console.log('The modal with ID "your-modal-id" has been closed.');
+        // Perform actions after the modal closes, e.g., clearing form data,
+        // updating UI, etc.
+    }
+});
+</script> -->
 

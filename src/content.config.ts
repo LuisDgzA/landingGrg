@@ -16,7 +16,7 @@ const escuelas = defineCollection({
             heroDescription: z.string(),
             heroImgSrc: image(),
             programas: z.array(
-                z.object({ title: z.string(), description: z.string() })
+                z.object({ title: z.string(), description: z.string(), route: z.string() })
             ),
         }),
 });
@@ -38,6 +38,8 @@ const programas = defineCollection({
             duracion: z.string(),
             materias: z.string(),
             modalidad: z.string(),
+            descargableFicha: z.string(),
+            descargablePlan: z.string(),
 
         }),
 });

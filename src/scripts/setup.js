@@ -68,9 +68,9 @@ document.addEventListener('DOMContentLoaded',() => {
     })
 
     document.addEventListener('scroll', () => {
-        console.log('scroll')
+        // console.log('scroll')
         if(window.scrollY > 100){
-            console.log('pase el 50')
+            // console.log('pase el 50')
             FixedTopbar.classList.add('bg-cafe')
         }else{
             FixedTopbar.classList.remove('bg-cafe')

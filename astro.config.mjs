@@ -8,8 +8,11 @@ import react from '@astrojs/react';
 export default defineConfig({
     vite: {
         plugins: [tailwindcss()],
+        // resolve: {
+        //     alias: { '@': './src' },
+        // },
     },
     integrations: [react()],
     
-    // base: '/licenciaturas/grg/',
+    base: '/licenciaturas/grg/',
 });

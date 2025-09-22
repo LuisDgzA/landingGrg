@@ -1,10 +1,9 @@
 ---
-import { personas } from '@/data/personas';
-const items = personas
-const realLength = items.length;
+import { personas } from '../data/personas.js';
+// const items = personas
 import GrgRojo from '../../public/images/grg_rojo.svg'
 const {titleCarousel} = Astro.props
-
+const {items} = Astro.props;
 ---
 
 <section class="container mx-auto pt-10">
