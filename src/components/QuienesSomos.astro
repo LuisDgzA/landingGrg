@@ -1,6 +1,7 @@
 ---
 import GrgRojo from '../../public/images/grg_rojo.svg'
 import FormPreregistro from './generics/FormPreregistro.astro'
+import ModalContactaAsesor from './modales/ModalContactaAsesor.astro'
 import ModalPreRegistro from './modales/ModalPreRegistro.astro'
 ---
 
@@ -16,7 +17,7 @@ import ModalPreRegistro from './modales/ModalPreRegistro.astro'
             <p class="text-20 mb-8 leading-[180%]">Con el propósito de que la Universidad GRG logre un verdadero impacto en el desarrollo profesional de nuestro equipo, se han creado Escuelas Especializadas que representan las prioridades del Grupo, permitiendo así un mejor enfoque y organización de los programas que se impartirán en cada una de las Escuelas Especializadas.</p>
             <div class="flex flex-col lg:flex-row gap-6">
                 <button class="call-to-actions-general w-full! lg:w-fit uppercase" aria-haspopup="dialog" aria-expanded="false" aria-controls="modalRegistrate" data-hs-overlay="#modalRegistrate">registrate ahora</button>
-                <div class="call-to-actions-secondary w-full! lg:w-fit uppercase text-center">contacto</div>
+                <div class="call-to-actions-secondary w-full! lg:w-fit uppercase text-center cursor-pointer" aria-haspopup="dialog" aria-expanded="false" aria-controls="modalContactaAsesor" data-hs-overlay="#modalContactaAsesor">contacto</div>
             </div>
         </div>
     </div>
@@ -24,7 +25,7 @@ import ModalPreRegistro from './modales/ModalPreRegistro.astro'
         <div class="w-full lg:w-[40%] bg-redGRG text-white px-8 py-8 space-y-6">
             <h3 class="text-45 font-semibold text-center lg:text-start">Estudiantes</h3>
             <p class="text-20">Descubre lo que nuestra universidad ofrece y accede a información actualizada de programas académicos. Ingresa al Campus Virtual para gestionar clases, recursos y actividades. Tu espacio de aprendizaje, siempre disponible.</p>
-            <a class="text-23 border-b-2 border-white" href="javascript:void(0)">Accede a tu Campus Digital</a>
+            <a class="text-23 border-b-2 border-white" href="https://campusflexible.academiaglobal.mx/#/" target="_blank">Accede a tu Campus Digital</a>
         </div>
         <div class="w-full lg:w-[60%]">
             <img src="./images/estudiantes.png" class="w-full h-full object-cover" alt="">

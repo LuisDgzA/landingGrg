@@ -2,17 +2,17 @@
 import FechasTopbar from "../generics/FechasTopbar.astro";
 import Topbar from "../generics/Topbar.astro";
 import Arrow from "../../../public/images/arrow.svg";
-import PlayCircle from "@/assets/icons/Play-circle.svg"
+import PlayCircle from "../../assets/icons/Play-circle.svg"
 import FixedTopBar from "../generics/FixedTopBar.astro";
 
-const srcVideo = "/videos/song2.mp4"; 
+const srcVideo = "./videos/song2.mp4"; 
 ---
 
 <section class="text-white bg-cover h-svh relative bg-[url(/images/comunidadEscolarHero.jpg)] bg-center" >
     <FixedTopBar/>
     <div class="container mx-auto">
     <!-- <Inscripciones client:load/> -->
-        <div class="w-[80%] lg:w-[75%]  flex flex-col gap-[32px] pb-[5rem] mt-8 md:mt-0 md:absolute bottom-[2rem]">
+        <div class="w-[80%] lg:w-[75%]  flex flex-col gap-[32px] pb-[5rem] mt-8 md:mt-0 absolute bottom-[2rem]">
         
             <h1 class="text-50  leading-[120%] font-semibold">Comunidad Escolar</h1>
             <p class="work font-light text-23">Mantente conectado con nuestra comunidad escolar y entérate de noticias, eventos y próximas graduaciones. Desde aquí podrás acceder a tu Campus Virtual, a la bolsa de trabajo y a diversos servicios y beneficios exclusivos para nuestros estudiantes. También encontrarás acceso directo a programas y certificaciones de formación continua que complementan tu desarrollo profesional. </p>

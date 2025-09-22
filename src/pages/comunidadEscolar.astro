@@ -1,22 +1,22 @@
 ---
-import "@/assets/css/main.css"
-import '@/assets/css/calendario.css'
+import "../assets/css/main.css"
+import '../assets/css/calendario.css'
 
 
-import Layout from '@/layouts/Layout.astro';
-import HeroCE from '@/components/comunidadEscolar/HeroCE.astro';
-import NavCE from '@/components/comunidadEscolar/NavCE.astro';
-import NoticiasCE from '@/components/comunidadEscolar/NoticiasCE.astro';
-import SectionCarousel from '@/components/SectionCarousel.astro';
-import BolsaTrabajo from "@/components/comunidadEscolar/BolsaTrabajo.astro";
-import Footer from "@/components/generics/Footer.astro";
-import Foros from "@/components/comunidadEscolar/Foros.astro";
-import ProgramasOfertas from "@/components/comunidadEscolar/ProgramasOfertas.astro";
-import FechasCE from "@/components/comunidadEscolar/FechasCE.astro";
-import ConoceAprendizaje from "@/components/comunidadEscolar/ConoceAprendizaje.astro";
+import Layout from '../layouts/Layout.astro';
+import HeroCE from '../components/comunidadEscolar/HeroCE.astro';
+import NavCE from '../components/comunidadEscolar/NavCE.astro';
+import NoticiasCE from '../components/comunidadEscolar/NoticiasCE.astro';
+import SectionCarousel from '../components/SectionCarousel.astro';
+import BolsaTrabajo from "../components/comunidadEscolar/BolsaTrabajo.astro";
+import Footer from "../components/generics/Footer.astro";
+import Foros from "../components/comunidadEscolar/Foros.astro";
+import ProgramasOfertas from "../components/comunidadEscolar/ProgramasOfertas.astro";
+import FechasCE from "../components/comunidadEscolar/FechasCE.astro";
+import ConoceAprendizaje from "../components/comunidadEscolar/ConoceAprendizaje.astro";
 
+import {personas} from "../data/personas.js"
 
-const {titulo, imagenHero} = Astro.props;
 
 ---
 <Layout>
@@ -28,15 +28,7 @@ const {titulo, imagenHero} = Astro.props;
     <ProgramasOfertas/>
     <Foros/>
     <BolsaTrabajo/>
-    
-        <!-- <button id="btncalendar">button</button> -->
-    <!-- <div class="container mx-auto">
-        <h1 class="text-red-500 text-3xl" >hola</h1>
-        <div class="max-w-[500px] w-[500px] h-[300px] border-2 border-red-500">
-            <div  id="caleandar"></div>
-        </div>
-    </div> -->
-    <SectionCarousel titleCarousel="Historias de éxito"/>
+    <SectionCarousel titleCarousel="Historias de éxito" items={personas}/>
     <Footer/>
 </Layout>
 

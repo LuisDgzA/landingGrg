@@ -38,6 +38,8 @@ const programas = defineCollection({
             duracion: z.string(),
             materias: z.string(),
             modalidad: z.string(),
+            descargableFicha: z.string(),
+            descargablePlan: z.string(),
 
         }),
 });

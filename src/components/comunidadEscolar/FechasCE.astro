@@ -3,16 +3,16 @@
     <div class="w-[80%] lg:w-[50%] mx-auto mt-8">
         <p class="text-lightGrayGRG text-center text-20">No pierdas de vista las próximas fechas importantes. Aquí encontrarás todo lo que necesitas saber.</p>
         <div class="flex flex-col lg:flex-row items-center justify-between">
-            <div>
-                <input type="checkbox" class="checkCalendar" name="inscripciones" id="inscripcionesIn" value="inscripcion">
+            <div class="flex items-center gap-4">
+                <input type="checkbox" class="checkCalendar accent-redGRG" name="inscripciones" id="inscripcionesIn" value="inscripcion">
                 <label for="inscripcionesIn">Inscripciones</label>
             </div>
-            <div>
-                <input type="checkbox" class="checkCalendar" name="inscripciones" id="graduacionesIn" value="graduacion">
+            <div class="flex items-center gap-4">
+                <input type="checkbox" class="checkCalendar accent-yellow-400" name="inscripciones" id="graduacionesIn" value="graduacion">
                 <label for="graduacionesIn">Graduaciones</label>
             </div>
-            <div>
-                <input type="checkbox" class="checkCalendar" name="inscripciones" id="eventosIn" value="evento">
+            <div class="flex items-center gap-4">
+                <input type="checkbox" class="checkCalendar accent-lightGrayGRG" name="inscripciones" id="eventosIn" value="evento">
                 <label for="eventosIn">Eventos</label>
             </div>
         </div>
@@ -37,8 +37,10 @@
     </div>
 </div>
 
-<script src="../../src/scripts/calendar.js" defer></script>
-<script src="../../src/scripts/eventosCalendar.js"  defer></script>
+<script src="/licenciaturas/grg/scripts/calendar.js" defer></script>
+<script src="/licenciaturas/grg/scripts/eventosCalendar.js"  defer></script>
+
+
 
 <script is:inline>
    

@@ -14,27 +14,27 @@
             {
                 "title": "Diplomado en Inteligencia Artificial Aplicada al Negocio Restaurantero",
                 "description": "Formar a los colaboradores en el uso estratégico de datos, inteligencia artificial y herramientas digitales para resolver retos del negocio, mejorar procesos y fortalecer la experiencia del cliente",
-                "route": "tecnologia"
+                "route": "ia"
             },
             {
                 "title": "Diplomado en Inteligencia Artificial Aplicada al Negocio Restaurantero",
                 "description": "Formar a los colaboradores en el uso estratégico de datos, inteligencia artificial y herramientas digitales para resolver retos del negocio, mejorar procesos y fortalecer la experiencia del cliente",
-                "route": "tecnologia"
+                "route": "ia"
             },
             {
                 "title": "Diplomado en Inteligencia Artificial Aplicada al Negocio Restaurantero",
                 "description": "Formar a los colaboradores en el uso estratégico de datos, inteligencia artificial y herramientas digitales para resolver retos del negocio, mejorar procesos y fortalecer la experiencia del cliente",
-                "route": "tecnologia"
+                "route": "ia"
             },
             {
                 "title": "Diplomado en Inteligencia Artificial Aplicada al Negocio Restaurantero",
                 "description": "Formar a los colaboradores en el uso estratégico de datos, inteligencia artificial y herramientas digitales para resolver retos del negocio, mejorar procesos y fortalecer la experiencia del cliente",
-                "route": "tecnologia"
+                "route": "ia"
             },
             {
                 "title": "Diplomado en Inteligencia Artificial Aplicada al Negocio Restaurantero",
                 "description": "Formar a los colaboradores en el uso estratégico de datos, inteligencia artificial y herramientas digitales para resolver retos del negocio, mejorar procesos y fortalecer la experiencia del cliente",
-                "route": "tecnologia"
+                "route": "ia"
             }
         ]
     },
@@ -144,7 +144,7 @@
         "id": 5,
         "idHTML": "escuela5",
         "imgSrc": "../assets/images/e_otro.svg",
-        "title": "De Desarrollo y Bienestar",
+        "title": "De Liderazgo y Alta Dirección",
         "description": "Orientada a desarrollar e implementar programas relacionados a capacitar a nuestros colaboradores con las técnicas de atención, promoción, relacionamiento, servicio y ventas para brindar experiencias memorables a nuestros clientes.",
         "pageRoute": "sistemas",
         "shortTitle": "Sistemas",

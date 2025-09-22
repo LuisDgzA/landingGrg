@@ -1,15 +1,15 @@
 ---
-import { personas as items } from "../../data/personas"
-import FlechaRojaDerecha from '@/assets/icons/flechaRojaDerecha.svg'
-import FlechaRojaIzquierda from '@/assets/icons/flechaRojaIzquierda.svg'
+import { docentes as items } from "../../data/docentes.js"
+import FlechaRojaDerecha from '../../assets/icons/flechaRojaDerecha.svg'
+import FlechaRojaIzquierda from '../../assets/icons/flechaRojaIzquierda.svg'
 ---
 
 <div class="bg-redGRG w-full">
     <div class="container mx-auto pt-12 pb-[18rem] mb-[30rem] relative">
-        <div class="w-full lg:w-[60%] mx-auto">
+        <div class="w-full lg:w-[60%] mx-auto" id="docentes">
             <h2 class="text-64 text-center font-semibold text-white">Conoce a quienes hacen posible tu aprendizaje</h2>
         </div>
-        <p class="text-center text-20 text-white mt-6 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, modi.</p>
+        <p class="text-center text-20 text-white mt-6 mb-4">Docentes con experiencia y compromiso académico que transforman tu aprendizaje en experiencia</p>
         <div class="container absolute left-0">
             <div class="splide" id="splideTutores" role="group" aria-label="Splide Basic HTML Example">
                 <div class="splide__track">                        
@@ -21,9 +21,9 @@ import FlechaRojaIzquierda from '@/assets/icons/flechaRojaIzquierda.svg'
                                         <div class="bg-grayExtra rounded-lg overflow-hidden bg-gray-300 space-y-6">
                                             <img class="w-full h-[20rem] object-cover" src={item.image} alt="">
                                             <div class="p-4">
-                                                <p class="text-30 font-semibold text-lightGrayGRG">Nombre</p>
-                                                <p class="text-20 font-semibold">Lic. Admin</p>
-                                                <p class="text-xl"><span class="text-yellow-400 text-45 font-semibold">4+ </span> / Años de experiencia</p>
+                                                <p class="text-30 font-semibold text-lightGrayGRG">{item.name}</p>
+                                                <p class="text-20 font-semibold">{item.degree}</p>
+                                                <p class="text-xl"><span class="text-yellow-400 text-45 font-semibold">{item.anios}+ </span> / Años de experiencia</p>
                                             </div>
                                         </div>
                                     </li>

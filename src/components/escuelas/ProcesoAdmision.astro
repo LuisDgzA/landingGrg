@@ -1,5 +1,7 @@
 ---
-import { pasosInscripcion  } from "../../data/pasosInscripcion"
+import { pasosInscripcion  } from "../../data/pasosInscripcion.js"
+
+
 ---
 
 
@@ -39,16 +41,21 @@ import { pasosInscripcion  } from "../../data/pasosInscripcion"
 </div>
 
 <script>
+   
     import "@splidejs/splide"
     import '@splidejs/splide/css';
-
     import Splide from "@splidejs/splide";
     var elms = document.getElementsByClassName( 'splide' );
 
-    for ( var i = 0; i < elms.length; i++ ) {
-        new Splide( elms[ i ],{
-            perPage: 1,
-            perMove: 1,
-        } ).mount();
-    }
+     for ( var i = 0; i < elms.length; i++ ) {
+         new Splide( elms[ i ],{
+             perPage: 1,
+             perMove: 1,
+         } ).mount();
+     }
+//      document.addEventListener('astro:page-load', () => {
+//     document.querySelectorAll('.splide').forEach((el) => {
+//       new Splide(el, { perPage: 1, perMove: 1 }).mount();
+//     });
+//   });
 </script>

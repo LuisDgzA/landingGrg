@@ -1,6 +1,6 @@
 ---
-import ArroiwCircleDown from "@/assets/icons/Arrow_Circle_Down.svg"
-import {preguntasFrecuentes} from '@/data/preguntasFrecuentes.js'
+import ArrowCircleDown from "../../assets/icons/Arrow_Circle_Down.svg"
+import {preguntasFrecuentes} from '../../data/preguntasFrecuentes.js'
 ---
 
 <div class="container mx-auto space-y-10 mt-16">
@@ -12,12 +12,12 @@ import {preguntasFrecuentes} from '@/data/preguntasFrecuentes.js'
             {
                 preguntasFrecuentes.map(pregunta => (
                     <div class="pregunta cursor-pointer">
-                        <div class="flex rounded-3xl overflow-hidden pregunta_title">
+                        <div class="flex overflow-hidden pregunta_title">
                             <div class="bg-grayExtra w-9/10 py-4 px-8">
                                 <p class="text-20">{pregunta.description}</p>
                             </div>
-                            <div class="bg-redGRG w-1/10 grid place-content-center">
-                                <ArroiwCircleDown class="pregunta_icon transition-all duration-150"/>
+                            <div class=" w-1/10 grid place-content-center pregunta_icon">
+                                <ArrowCircleDown class="pregunta_icon transition-all duration-150"/>
                             </div>
                         </div>
                         <di class="pregunta_respuesta">
@@ -28,7 +28,6 @@ import {preguntasFrecuentes} from '@/data/preguntasFrecuentes.js'
             }
 
            
-        </div>
     </div>
 </div>
 
@@ -37,7 +36,7 @@ import {preguntasFrecuentes} from '@/data/preguntasFrecuentes.js'
     const preguntasTitle = document.querySelectorAll('.pregunta_title')
     preguntasTitle.forEach(pregunta => {
         pregunta.addEventListener('click', () => {
-            console.log('cliak')
+            console.log('click')
             const parent = pregunta.parentElement
             parent?.classList.toggle('active')
             const pregunta_response = pregunta.nextElementSibling

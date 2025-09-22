@@ -7,9 +7,9 @@ import OfertaEducativa from "./OfertaEducativa.astro";
 import Principios from "./Principios.astro";
 import FormContacto from "./generics/FormContacto.astro";
 import HeroFullHeight from "./generics/HeroFullHeight.astro";
-import PlayCircle from "@/assets/icons/Play-circle.svg"
+import PlayCircle from "../assets/icons/Play-circle.svg"
 
-import {personas} from "@/data/personas.js"
+import {personasRecomiendan} from "../data/personasRecomiendan.js"
 import ModalQuienesSomos from "./modales/ModalQuienesSomos.astro";
 
 ---
@@ -19,7 +19,7 @@ import ModalQuienesSomos from "./modales/ModalQuienesSomos.astro";
     <HeroFullHeight
       title="Desarrollamos el máximo potencial de nuestros colaboradores"
       description="La misión de la Universidad GRG es ser el centro de generación de competencias de los colaboradores, así como el eje de innovación y soluciones para los continuos retos del Grupo."
-      imgBackground="/images/hero_home.jpg">
+      imgBackground="./images/hero_home.jpg">
       <button class="call-to-actions-general xl:text-xl flex items-center gap-4" aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-basic-modal" data-hs-overlay="#hs-basic-modal">¿Quiénes somos? <PlayCircle/></button>
     </HeroFullHeight>
     <!-- <SectionModeloEducativo/> -->
@@ -28,7 +28,7 @@ import ModalQuienesSomos from "./modales/ModalQuienesSomos.astro";
     <Principios/>
     <OfertaEducativa/>
     <FormContacto parrafo={true}/>
-    {personas.length > 0 && <SectionCarousel titleCarousel="Quienes recomiendan" items={personas} />}
+    {personasRecomiendan.length > 0 && <SectionCarousel titleCarousel="Quienes recomiendan" items={personasRecomiendan} />}
     <Footer/>
     <ModalQuienesSomos/>
     

@@ -1,7 +1,7 @@
 ---
-import DownloadIcon from '@/assets/icons/Download.svg'
+import DownloadIcon from '../../assets/icons/Download.svg'
 import ModalContactaAsesor from '../modales/ModalContactaAsesor.astro'
-
+const {descargableFicha, descargablePlan} = Astro.props;
 ---
 
 <div class="bg-[url(/images/conoce_programa.jpg)]">
@@ -21,7 +21,7 @@ import ModalContactaAsesor from '../modales/ModalContactaAsesor.astro'
             <span class="text-yellow-400">▶</span>
             plan de estudios
             </span>
-            <span class="readmore-ejes"><span class="hidden lg:block">Descargar</span>  <DownloadIcon/></span>
+            <span class="readmore-ejes" data-download={descargablePlan}><span class="hidden lg:block">Descargar</span>  <DownloadIcon/></span>
         </button>
         
         <button 
@@ -32,11 +32,24 @@ import ModalContactaAsesor from '../modales/ModalContactaAsesor.astro'
             <span class="text-yellow-400">▶</span>
             ficha técnica
             </span>
-            <span class="readmore-ejes"><span class="hidden lg:block">Descargar</span> <DownloadIcon/></span>
+            <span class="readmore-ejes" data-download={descargableFicha}><span class="hidden lg:block">Descargar</span> <DownloadIcon/></span>
         </button>
         
 
     </div>
 </div>
 
-<ModalContactaAsesor/>
+<script>
+    const downloadButtons = document.querySelectorAll(".readmore-ejes")
+
+    downloadButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const url = button.getAttribute('data-download')
+            window.open(url, "_blank", "noopener");
+            // const link = document.createElement("a");
+            // link.href = url;
+            // link.download = "MyFile.pdf";    
+            // link.click();
+        })
+    })
+</script>

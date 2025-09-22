@@ -1,7 +1,8 @@
 ---
 import { getCollection } from 'astro:content'
 import IconoRojoBlanco from '../../../public/images/icono_blanco_rojo.svg'
-
+import Acceder from "../../assets/icons/acceder.svg"
+import SidebarResponsive from '../../assets/icons/menu_sidebar_responsive.svg'
 const escuelas = await getCollection('escuelas')
 
 // console.log(escuelas)
@@ -11,7 +12,7 @@ const escuelas = await getCollection('escuelas')
     <IconoRojoBlanco/>
     <div class="flex items-center gap-4 lg:hidden cursor-pointer" id="btnNavBarResponsive">
         <span>Menú</span>
-        <IconoRojoBlanco/>
+        <SidebarResponsive/>
     </div>
     <nav class="hidden lg:block">
         <ul class="flex gap-4 text-white py-[2.5rem]">
@@ -19,20 +20,20 @@ const escuelas = await getCollection('escuelas')
                 <a href="/">Inicio</a>                
             </li>
             <li class="topbar-link submenu-dropdown">Comunidad Escolar
-                <div class="bg-gray-300 flex flex-col text-black absolute -left-[1rem] top-[4rem] w-max p-8 space-y-4 hidden dropdown z-100">
-                    <a href="./comunidadEscolar">Boletín Educativo</a>
-                    <a href="./comunidadEscolar">Bolsa de Trabajo</a>
-                    <a href="./comunidadEscolar">Nuestros Docentes</a>
-                    <a href="./comunidadEscolar#calendarioCE">Calendario Académico</a>
-                    <a href="./comunidadEscolar">Becas y Otros Beneficios</a>
+                <div class="bg-grayExtra flex flex-col text-black absolute -left-[1rem] top-[4rem] w-max p-8 space-y-4 hidden dropdown z-100">
+                    <a href="/licenciaturas/grg/comunidadEscolar#noticiasCE">Boletín Educativo</a>
+                    <a href="/licenciaturas/grg/comunidadEscolar#bolsa">Bolsa de Trabajo</a>
+                    <a href="/licenciaturas/grg/comunidadEscolar#docentes">Nuestros Docentes</a>
+                    <a href="/licenciaturas/grg/comunidadEscolar#calendarioCE">Calendario Académico</a>
+                    <a href="/licenciaturas/grg/comunidadEscolar#beneficios">Becas y Otros Beneficios</a>
                 </div>
             </li>
             <li class="topbar-link submenu-dropdown">
                 Escuelas
-                <div class="bg-gray-300 flex flex-col text-black absolute -left-[1rem] top-[4rem] w-[25rem] max-w-[25rem] p-8 space-y-4 hidden dropdown z-100">
+                <div class="bg-grayExtra flex flex-col text-black absolute -left-[1rem] top-[4rem] w-[25rem] max-w-[25rem] p-8 space-y-4 hidden dropdown z-100">
                     {
                         escuelas.map(({data:escuela},index) => (
-                            <a href={`/escuelas#${escuela.idHTML}`}>{`${index+1} - `}{escuela.title}</a>
+                            <a href={`/licenciaturas/grg/escuelas#${escuela.idHTML}`}>{`${index+1} - `}{escuela.title}</a>
                         ))
                     }
                     <!-- <a href="javascript:void(0);">1 - De Tecnología y Ciencia de Datos</a>
@@ -43,9 +44,12 @@ const escuelas = await getCollection('escuelas')
                 </div>
             </li>
             <li class="topbar-link">
-                <a href="/aspirantes">Aspirantes</a>   
+                <a href="/licenciaturas/grg/aspirantes">Aspirantes</a>   
             </li>
-            <li class="topbar-link">Contacto</li>
+            <li class="topbar-link" aria-haspopup="dialog" aria-expanded="false" aria-controls="modalContactaAsesor" data-hs-overlay="#modalContactaAsesor">Contacto</li>
+            <li class="topbar-link">
+                <a class="flex gap-2 items-center" href="https://campusflexible.academiaglobal.mx/#/" target="_blank">Acceder <Acceder/></a>   
+            </li>
         </ul>
     </nav>
 </div>
