@@ -1,5 +1,7 @@
 ---
 import DownloadIcon from '../../assets/icons/Download.svg'
+import YellowArrow from '../../assets/icons/yellow_arrow_download.svg'
+
 import ModalContactaAsesor from '../modales/ModalContactaAsesor.astro'
 const {descargableFicha, descargablePlan} = Astro.props;
 ---
@@ -18,7 +20,7 @@ const {descargableFicha, descargablePlan} = Astro.props;
             onclick="toggleAccordion(event)"
         >
             <span class="flex items-center gap-2 py-4 text-20 uppercase">
-            <span class="text-yellow-400">▶</span>
+            <span class="text-yellow-400"><YellowArrow/></span>
             plan de estudios
             </span>
             <span class="readmore-ejes" data-download={descargablePlan}><span class="hidden lg:block">Descargar</span>  <DownloadIcon/></span>
@@ -29,7 +31,7 @@ const {descargableFicha, descargablePlan} = Astro.props;
             onclick="toggleAccordion(event)"
         >
             <span class="flex items-center gap-2 py-4 text-20 uppercase">
-            <span class="text-yellow-400">▶</span>
+            <span class="text-yellow-400"><YellowArrow/></span>
             ficha técnica
             </span>
             <span class="readmore-ejes" data-download={descargableFicha}><span class="hidden lg:block">Descargar</span> <DownloadIcon/></span>

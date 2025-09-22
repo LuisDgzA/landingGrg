@@ -31,6 +31,10 @@ body{
     font-family: "Raleway", sans-serif;
 }
 
+body.active{
+    overflow: hidden;
+}
+
 .hero-container{
     background: url('/images/hero_new.jpg') center no-repeat;
     background-size: cover;

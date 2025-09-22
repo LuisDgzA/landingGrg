@@ -46,11 +46,14 @@ document.addEventListener('DOMContentLoaded',() => {
     btnNavBarResponsive.addEventListener('click', () => {
         // console.log('clicknab')
         navBarResponsive.classList.toggle('hidden')
+        document.body.classList.toggle('active')
     })
 
     btnCloseNavBar.addEventListener('click', () => {
         // console.log('clicknab')
         navBarResponsive.classList.add('hidden')
+        document.body.classList.toggle('active')
+
     })
 
     const DropdownsMenus = document.querySelectorAll('.submenu-dropdown')
