@@ -1,13 +1,13 @@
 // console.log("demo")
 var events = [
   
-  {'type':'evento','Date': "2025-08-10", 'title': '25 year anniversary','description':'desc1'},  
-  {'type':'evento','Date': "2025-08-11", 'title': '25 year anniversary','description':'desc2' },
-  {'type':'inscripcion','Date': "2025-09-10", 'title': '25 year anniversary','description':'desc3'},
-  {'type':'evento','Date': "2025-09-10", 'title': 'el evento','description':'desc4'},  
+  {'type':'evento','Date': "2025-08-10", 'title': 'Ceremonia de Graduación Otoño 2025 ','description':'La Universidad GRG celebra los logros de sus egresados en una emotiva ceremonia virtual. '},  
+  {'type':'evento','Date': "2025-08-11", 'title': 'Ceremonia de Graduación Otoño 2025 ','description':'La Universidad GRG celebra los logros de sus egresados en una emotiva ceremonia virtual. ' },
+  {'type':'inscripcion','Date': "2025-09-10", 'title': 'Ceremonia de Graduación Otoño 2025 ','description':'La Universidad GRG celebra los logros de sus egresados en una emotiva ceremonia virtual. '},
+  {'type':'evento','Date': "2025-09-10", 'title': 'Ceremonia de Graduación Otoño 2025','description':'La Universidad GRG celebra los logros de sus egresados en una emotiva ceremonia virtual. '},  
 
-  {'type':'inscripcion','Date': "2025-10-11", 'title': '25 year anniversary','description':'desc1' },
-  {'type':'graduacion','Date': "2025-10-12", 'title': '25 year anniversary','description':'desc1' },
+  {'type':'inscripcion','Date': "2025-10-11", 'title': 'Ceremonia de Graduación Otoño 2025 ','description':'La Universidad GRG celebra los logros de sus egresados en una emotiva ceremonia virtual. ' },
+  {'type':'graduacion','Date': "2025-10-12", 'title': 'Ceremonia de Graduación Otoño 2025 ','description':'La Universidad GRG celebra los logros de sus egresados en una emotiva ceremonia virtual. ' },
 
 
 ];
@@ -83,7 +83,10 @@ function setCarouselMini(itemsCarousel){
    
     let titleCarousel = img.querySelector("#titleMini")
     // console.log("🚀 ~ titleCarousel:", titleCarousel)
-    let descCarousel = img.querySelector("#dateMini")
+    let descCarousel = img.querySelector("#descriptionMini")
+
+    let dateCarousel = img.querySelector("#dateMini")
+
     // console.log("🚀 ~ descCarousel:", descCarousel)
     let position = 0;
     titleCarousel.innerText = itemsCarousel[position].title
@@ -94,11 +97,14 @@ function setCarouselMini(itemsCarousel){
             position = 0
             titleCarousel.innerText = itemsCarousel[position].title
             descCarousel.innerText = itemsCarousel[position].description
+            dateCarousel.innerText = itemsCarousel[position].Date
 
             return;
         }
         titleCarousel.innerText = itemsCarousel[position+1].title
         descCarousel.innerText = itemsCarousel[position+1].description
+        dateCarousel.innerText = itemsCarousel[position].Date
+
         position++;
     }
 
@@ -107,11 +113,15 @@ function setCarouselMini(itemsCarousel){
             position = itemsCarousel.length - 1;
             titleCarousel.innerText = itemsCarousel[position].title
             descCarousel.innerText = itemsCarousel[position].description
+            dateCarousel.innerText = itemsCarousel[position].Date
+
 
             return;
         }
         titleCarousel.innerText = itemsCarousel[position-1].title
         descCarousel.innerText = itemsCarousel[position-1].description
+        dateCarousel.innerText = itemsCarousel[position].Date
+
         position--;
     }
 

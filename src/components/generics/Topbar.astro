@@ -17,7 +17,7 @@ const escuelas = await getCollection('escuelas')
     <nav class="hidden lg:block">
         <ul class="flex gap-4 text-white py-[2.5rem]">
             <li class="topbar-link">
-                <a href="/">Inicio</a>                
+                <a href="/licenciaturas/grg/">Inicio</a>                
             </li>
             <li class="topbar-link submenu-dropdown">Comunidad Escolar
                 <div class="bg-grayExtra flex flex-col text-black absolute -left-[1rem] top-[4rem] w-max p-8 space-y-4 hidden dropdown z-100">
@@ -43,8 +43,14 @@ const escuelas = await getCollection('escuelas')
                     <a href="javascript:void(0);">5 - Liderazgo</a> -->
                 </div>
             </li>
-            <li class="topbar-link">
-                <a href="/licenciaturas/grg/aspirantes">Aspirantes</a>   
+            <li class="topbar-link submenu-dropdown">Aspirantes
+                 <div class="bg-grayExtra flex flex-col text-black absolute -left-[1rem] top-[4rem] w-max p-8 space-y-4 hidden dropdown z-100">
+                    <a href="/licenciaturas/grg/aspirantes">Convocatorias vigentes</a>
+                    <a href="/licenciaturas/grg/aspirantes">Pasos del proceso de inscripción</a>
+                    <a href="/licenciaturas/grg/aspirantes">Requisitos y documentación</a>
+                    <a href="/licenciaturas/grg/aspirantes">Preguntas frecuentes</a>
+                    <a href="/licenciaturas/grg/aspirantes">Registrate Aquí</a>
+                </div>  
             </li>
             <li class="topbar-link" aria-haspopup="dialog" aria-expanded="false" aria-controls="modalContactaAsesor" data-hs-overlay="#modalContactaAsesor">Contacto</li>
             <li class="topbar-link">
