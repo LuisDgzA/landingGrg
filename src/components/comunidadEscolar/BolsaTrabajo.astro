@@ -4,7 +4,7 @@ import YellowArrow from '../../assets/icons/yellow_arrow_download.svg'
 
 ---
 
-<section class="container mx-auto">
+<section class="container mx-auto" id="bolsa">
   <div class="max-w-4xl mx-auto px-4 py-12">
     <!-- <img src="./images/logo-grg.png" alt="Logo GRG" class="mx-auto mb-6" /> -->
     
@@ -20,54 +20,23 @@ import YellowArrow from '../../assets/icons/yellow_arrow_download.svg'
   <div class="space-y-4 mb-20">
 
     <!-- Item 1 -->
-    <div class="rounded overflow-hidden">
-      <button 
-        class="accordion-ejes"
-        onclick="toggleAccordion(event)"
-      >
-        <span class="flex items-center gap-2 py-4 lg:text-xl xl:text-2xl">
-          <span class="text-yellow-400"><YellowArrow/></span>
-          Título Aquí
-        </span>
-        <span class="readmore-ejes"><span class="hidden lg:block">Ver Más</span> <DownloadIcon/></span>
-      </button>
-      <div class="px-4 py-3 text-gray-700 hidden">
-        <!--  -->
+    <a href="https://www.gruporestauranterogigante.com.mx/vacantes" target="_blank">
+      <div class="rounded overflow-hidden">
+        <button 
+          class="accordion-ejes"
+          onclick="toggleAccordion(event)"
+        >
+          <span class="flex items-center gap-2 py-4 lg:text-xl xl:text-2xl">
+            <span class="text-yellow-400"><YellowArrow/></span>
+            Ver nuestras vacantes Aquí
+          </span>
+          <span class="readmore-ejes"><span class="hidden lg:block">Ver Más</span> <DownloadIcon/></span>
+        </button>
+        
       </div>
-    </div>
+    </a>
 
-    <!-- Item 2 -->
-    <div class="rounded overflow-hidden">
-      <button 
-        class="accordion-ejes"
-        onclick="toggleAccordion(event)"
-      >
-        <span class="flex items-center py-4 gap-2 lg:text-xl xl:text-2xl">
-          <span class="text-yellow-400"><YellowArrow/></span>
-          Título Aquí
-        </span>
-        <span class="readmore-ejes"><span class="hidden lg:block">Ver Más</span> <DownloadIcon/>          
-        </span>
-      </button>
-      <div class="px-4 py-3 text-gray-700 hidden">
-      </div>
-    </div>
-
-    <!-- Item 3 -->
-    <div class="rounded overflow-hidden">
-      <button 
-        class="accordion-ejes"
-        onclick="toggleAccordion(event)"
-      >
-        <span class="flex items-center gap-2 py-4 lg:text-xl xl:text-2xl">
-          <span class="text-yellow-400"><YellowArrow/></span>
-          Título Aquí
-        </span>
-        <span class="readmore-ejes"><span class="hidden lg:block">Ver Más</span> <DownloadIcon/></span>
-      </button>
-      <!-- <div class="px-4 py-3 text-gray-700 hidden">
-      </div> -->
-    </div>
+    
 
   </div>
 

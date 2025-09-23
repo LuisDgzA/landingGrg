@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded',() => {
         console.log(navbarContent.classList.contains('hidden'))
         if (!navbarContent.classList.contains('hidden') && !isClickInsideSidebar && !isClickOnToggle) {
             navBarResponsive.classList.add('hidden')
+            document.body.classList.remove('active')
         }
         if(!isClickInsideDropdown && !isClickInsideDropdown){
             Dropdowns.forEach(dd => {

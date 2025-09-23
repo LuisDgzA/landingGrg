@@ -90,7 +90,8 @@ function setCarouselMini(itemsCarousel){
     // console.log("🚀 ~ descCarousel:", descCarousel)
     let position = 0;
     titleCarousel.innerText = itemsCarousel[position].title
-            descCarousel.inneText = itemsCarousel[position].description
+            descCarousel.innerText = itemsCarousel[position].description
+            dateCarousel.innerText = itemsCarousel[position].Date
 
     const moveRight = () => {
         if (position >= itemsCarousel.length - 1) {
